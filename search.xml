@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/01/24/hello-world/"/>
+      <url>/2019/01/24/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Welcome-to-this-This-is-my-very-first-post"><a href="#Welcome-to-this-This-is-my-very-first-post" class="headerlink" title="Welcome to this! This is my very first post."></a>Welcome to this! This is my very first post.</h3><h4 id="Some-information-on-the-website"><a href="#Some-information-on-the-website" class="headerlink" title="Some information on the website:"></a>Some information on the website:</h4><p>此网站是怎么搭建起来的</p><pre class=" language-bash"><code class="language-bash">此网站是再hexo主题框架的基础下，基于GitHub静态托管，我给他起名叫：Hello-World</code></pre><p>此网站的作用是什么</p><pre class=" language-bash"><code class="language-bash">目的是为了记录一些知识点，希望对大家有些帮助</code></pre><p>主要知识方向是什么</p><pre class=" language-bash"><code class="language-bash">以计算机、编程为主，今后会主要方向会向着Machine learning</code></pre><p>他会一直存在吗？</p><pre class=" language-bash"><code class="language-bash">会的！我给这个域名给他赋予了特殊的意义，它的谐音是热带猫，也是其它语言的谐音。</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

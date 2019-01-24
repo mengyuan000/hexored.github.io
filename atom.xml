@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>热带猫</title>
+  
+  <subtitle>简单·生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-24T15:08:15.152Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Smy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/24/hello-world/"/>
+    <id>http://yoursite.com/2019/01/24/hello-world/</id>
+    <published>2019-01-24T11:40:29.623Z</published>
+    <updated>2019-01-24T15:08:15.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Welcome-to-this-This-is-my-very-first-post&quot;&gt;&lt;a href=&quot;#Welcome-to-this-This-is-my-very-first-post&quot; class=&quot;headerlink&quot; title=&quot;Welcome
+        
+      
+    
+    </summary>
+    
+      <category term="markdown" scheme="http://yoursite.com/categories/markdown/"/>
+    
+    
+      <category term="Typora" scheme="http://yoursite.com/tags/Typora/"/>
+    
+  </entry>
+  
+</feed>
