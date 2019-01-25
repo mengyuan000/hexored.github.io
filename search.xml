@@ -8,7 +8,7 @@
       <link href="/2019/01/24/hello-world/"/>
       <url>/2019/01/24/hello-world/</url>
       
-        <content type="html"><![CDATA[<h3 id="Welcome-to-this-This-is-my-very-first-post"><a href="#Welcome-to-this-This-is-my-very-first-post" class="headerlink" title="Welcome to this! This is my very first post."></a>Welcome to this! This is my very first post.</h3><h4 id="Some-information-on-the-website"><a href="#Some-information-on-the-website" class="headerlink" title="Some information on the website:"></a>Some information on the website:</h4><p>此网站是怎么搭建起来的</p><pre class=" language-bash"><code class="language-bash">此网站是再hexo主题框架的基础下，基于GitHub静态托管，我给他起名叫：Hello-World</code></pre><p>此网站的作用是什么</p><pre class=" language-bash"><code class="language-bash">目的是为了记录一些知识点，希望对大家有些帮助</code></pre><p>主要知识方向是什么</p><pre class=" language-bash"><code class="language-bash">以计算机、编程为主，今后会主要方向会向着Machine learning</code></pre><p>他会一直存在吗？</p><pre class=" language-bash"><code class="language-bash">会的！我给这个域名给他赋予了特殊的意义，它的谐音是热带猫，也是其它语言的谐音。</code></pre>]]></content>
+        <content type="html"><![CDATA[<h3 id="Welcome-to-this-This-is-my-very-first-post"><a href="#Welcome-to-this-This-is-my-very-first-post" class="headerlink" title="Welcome to this! This is my very first post."></a>Welcome to this! This is my very first post.</h3><h4 id="Some-information-on-the-website"><a href="#Some-information-on-the-website" class="headerlink" title="Some information on the website:"></a>Some information on the website:</h4><p>此网站是怎么搭建起来的</p><pre class=" language-bash"><code class="language-bash">此网站是再hexo主题框架的基础下，基于GitHub静态托管，我给他起名叫：Hello-World</code></pre><p>此网站的作用是什么</p><pre class=" language-bash"><code class="language-bash">目的是为了记录一些知识</code></pre><p>主要知识方向是什么</p><pre class=" language-bash"><code class="language-bash">以计算机、编程为主，今后会主要方向会向着Machine learning</code></pre><p>他会一直存在吗？</p><pre class=" language-bash"><code class="language-bash">会的！我给这个域名给他赋予了特殊的意义，它的法语谐音是热带猫，之前为了赠与某人，也正如我爱她一样。</code></pre>]]></content>
       
       
       <categories>
@@ -21,6 +21,35 @@
         <tags>
             
             <tag> Typora </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo+Github搭建网站</title>
+      <link href="/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
+      <url>/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo?"></a>什么是Hexo?</h2><p>hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在Github和Heroku上，Hexo也是github的开源项目</p><h2 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h2><h3 id="1、获得域名"><a href="#1、获得域名" class="headerlink" title="1、获得域名"></a>1、获得域名</h3><p>而且Github托管网站，完全不需要备案，推荐阿里云注册。</p><h3 id="2、GitHub创建个人仓库"><a href="#2、GitHub创建个人仓库" class="headerlink" title="2、GitHub创建个人仓库"></a>2、GitHub创建个人仓库</h3><p>登录Github，如果没有到github.com注册账号,然后新建一个仓库，名字为<strong><strong>____</strong></strong>.github.io,例如我的叫hexored.github.io</p><h3 id="3、安装Git"><a href="#3、安装Git" class="headerlink" title="3、安装Git"></a>3、安装Git</h3><p>什么是Git？简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到Github上。安装到随意目录下即可。安装完成后鼠标右键会出现Git Bash选项，如果没有你需要手动配置，步骤如下：<br><strong>1、通过在“运行”中输入‘regedit’，打开注册表。</strong><br><strong>2、找到[HKEY_CLASSES_ROOT\Directory\Background]。</strong><br><strong>3、在[Background]下如果没有[shell],则右键-新建项[shell]。</strong><br><strong>4、在[shell]下右键-新建项[open in Git],其值为“Git Bash Here”,此为右键菜单显示名称。</strong><br><strong>5、在[shell]下右键-新建-字符串值[Icon],双击编辑，其值为“D:...\Git\mingw64\share\git\git-for-windows.ico”。此为菜单加图标。</strong><br><strong>6、在[open in git]下右键-新建-项[command],其值为 “D:\Program Files\Git\git-bash.exe”</strong><br>这是为了以后管理项目方便，<strong>配置好后可以在任意文件夹下右键出Git Bash。</strong><br>安装成功后鼠标双击打开Git Bash,会出来命令行，然后在Git命令行中<br>设置user.name和user.email配置信息：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"你的Github用户名git config --global user.email "</span>你的Github注册邮箱"</code></pre><p>生成ssh密钥文件：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> keygen -t rsa -C <span class="token string">"你的Github注册邮箱"</span></code></pre><p>然后一直回车后会生成.ssh的文件夹中的id_rsa.pub密钥，将其中的内容全部复制，打开Github-&gt;Settings-&gt;Keys页面，新建new SSH Key。title为标题可随意填，将复制的内容粘贴进去，最后点击Add SSH key保存。最后再回到Git Bash中检测Github公钥设置是否成功，在Git命令行中输入ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>,如出现语句中出现successfully字样就表示成功</p><h3 id="4、安装Node-js"><a href="#4、安装Node-js" class="headerlink" title="4、安装Node.js"></a>4、安装Node.js</h3><p>注意安装node.js会包含环境变量及npm的安装，安装后，检测Node.js是否安装成功，在命令行中输入node -v：出现v6.10.2版本号就是成功了，接着输入npm -v检测。</p><h3 id="5、安装hexo"><a href="#5、安装hexo" class="headerlink" title="5、安装hexo"></a>5、安装hexo</h3><p>hexo就是我们的个人博客网站的框架，这里需要自己在电脑上创建一个文件夹，在此文件夹中进入命令行，安装shift键，右击鼠标点击命令行（open command window here）这次打开的是window命令行，你也可以先进命令行在cd进入相应的文件夹。<br>使用npm命令安装Hexo，输入：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</code></pre><p>完成hexo的安装后就可以对hexo进行初始化操作了。</p><h3 id="6、初始化"><a href="#6、初始化" class="headerlink" title="6、初始化"></a>6、初始化</h3><p>打开Git Bash，输入初始化命令：</p><pre class=" language-bash"><code class="language-bash">hexo init blog</code></pre><p>初始化完成后你会在文件夹里面看到出现了许多文件，以后操作都会在此文件夹下进行，在此文件夹下任意地方打开Git Bash。我们来网站的本地检验预览。</p><pre class=" language-bash"><code class="language-bash">hexo new hello_world      //新建hello_world文章hexo g                    //生成hexo s                    //本地预览</code></pre><p>输入完后打开浏览器输入地址：localhost:4000，就可以看到本地浏览模式下的网站雏形。<br>想要把相应的文件部署到Github我们还需要进行网站的推送。</p><h3 id="7、推送网站"><a href="#7、推送网站" class="headerlink" title="7、推送网站"></a>7、推送网站</h3><p><strong>在文件的根目录下，_config.yml为站点配置文件。themes文件夹中也有一个_config.yml为主题配置文件。</strong><br>1、我们<strong>打开站点文件</strong>，翻到最后修改为：<br>deploy:<br>  type: git<br>  repo:  github仓库的完整路径加上.git<br>  （例如我的<a href="https://github.com/mengyuan000/hexored.github.io.git）" target="_blank" rel="noopener">https://github.com/mengyuan000/hexored.github.io.git）</a><br>  branch: master<br>2、<strong>打开根目录下的source，新建文件名为CNAME，保存成所有文件形式，在里面保存你的域名，建议不带www</strong><br>保存后，安装Git部署插件：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</code></pre><p>完成后在Git Bash中输入命令：</p><pre class=" language-bash"><code class="language-bash">hexo c     //清理hexo g     //生成hexo d     //部署</code></pre><p>此时进入Github项目仓库你会发现文件已经部署上去了。为了用域名进行访问，你就需要对域名进行绑定。</p><h3 id="8、绑定域名："><a href="#8、绑定域名：" class="headerlink" title="8、绑定域名："></a>8、绑定域名：</h3><p>进入购买域名后的管理台，找到域名，进入解析，对照下图新添加三个项<br><img src="/postImg/1-2.jpg"><br>151.101.73.147为Github的地址，你可以自己ping你的xxxx.github.io的ip地址。首次解析可能需要等几分钟才好，如果你访问不了自己的网站，你就等20分钟后再试一下，如若不行就是你配置的问题。然后登录Github,进入之前创建的仓库，点击settings中GitHub Pages项中source改为master branch,在出来的Custom domain中填入你的域名。点击save保存。这时，你可以用域名访问网站了。</p><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>在之后你也可以更换主题，在此网站<a href="https://hexo.io/themes/的开发者Github上下载" target="_blank" rel="noopener">https://hexo.io/themes/的开发者Github上下载</a></p><pre class=" language-bash"><code class="language-bash">clone 路径 保存目录（起始为当前文件）</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> node.js </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
