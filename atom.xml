@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-25T02:17:45.027Z</updated>
+  <updated>2019-01-25T09:20:50.654Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ES6的常用语法</title>
+    <link href="http://yoursite.com/2019/01/25/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/01/25/ES6的常用语法/</id>
+    <published>2019-01-25T09:09:36.311Z</published>
+    <updated>2019-01-25T09:20:50.654Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;刚开始用vue或者react，很多时候我们都会把ES6这个大兄弟加入我们的技术栈中。但是ES6那么多那么多特性，我们需要全部都掌握吗？秉着八原则，掌握好常有用的这个可以让我们快速起飞&lt;/p&gt;
+&lt;h3 id=&quot;变量声明const和let&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
