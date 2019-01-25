@@ -99,4 +99,31 @@
     
   </entry>
   
+  <entry>
+    <title>Html基础语法</title>
+    <link href="http://yoursite.com/2019/01/08/Html%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/01/08/Html基础语法/</id>
+    <published>2019-01-08T10:58:46.660Z</published>
+    <updated>2019-01-25T08:46:30.864Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Html是一种超文本标记语言( hypertext markup language )，超链接（&lt;strong&gt;实现页面跳转&lt;/strong&gt;）；&lt;/p&gt;
+&lt;h3 id=&quot;html标准结构：&quot;&gt;&lt;a href=&quot;#html标准结构：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Html" scheme="http://yoursite.com/tags/Html/"/>
+    
+  </entry>
+  
 </feed>
