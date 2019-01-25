@@ -43,6 +43,33 @@
   </entry>
   
   <entry>
+    <title>Gitalk评论配置</title>
+    <link href="http://yoursite.com/2019/01/23/Gitalk%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/01/23/Gitalk评论配置/</id>
+    <published>2019-01-23T10:49:40.076Z</published>
+    <updated>2019-01-25T05:47:28.626Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。&lt;/p&gt;
+&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Github" scheme="http://yoursite.com/categories/Github/"/>
+    
+    
+      <category term="Gitalk" scheme="http://yoursite.com/tags/Gitalk/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo+Github搭建网站</title>
     <link href="http://yoursite.com/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
     <id>http://yoursite.com/2019/01/21/hexo_github搭建网站/</id>

@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>Gitalk评论配置</title>
+      <link href="/2019/01/23/Gitalk%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE/"/>
+      <url>/2019/01/23/Gitalk%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。</p><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>Gitalk是一个Github上的一个利用lssues作为评论的项目。这个是项目仓库的地址<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">https://github.com/gitalk/gitalk</a>.<br>下载两个文件gitalk.min.js和gitalk.css到自己的本地项目目录。<br>把下列代码复制到需要的地方<br><img src="/postImg/2-2.jpg"><br>上面也看到了有几个数据需要填，比较重要的有clientID和clientSecret，怎么得到这两个数据呢，我们需要新建application得到。</p><h2 id="新建OAuth"><a href="#新建OAuth" class="headerlink" title="新建OAuth"></a>新建OAuth</h2><p>开始新建OAuth application：地址：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br><img src="/postImg/2-3.jpg"><br>完成后会出现clientID和clientSecret的串码，复制串码到上面对应的位置，还有就是repo是一个仓库名字，不需要完整路径。还有就是Gitalk是根据id来创建lssues,所以想要不同，id也要不一样，也可以填相对路径indow.location.pathname，完成后保存文件。<br>保存后进入首次进入页面后会出现使用Github登录，随后出现初始化lssues，点击一次即可，不然会创建多个lssues,随后刷新就完成了。<br><img src="/postImg/2-4.jpg"></p><h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><h3 id="1、如果出现error：not-found：说明你的repo仓库名填写有问题"><a href="#1、如果出现error：not-found：说明你的repo仓库名填写有问题" class="headerlink" title="1、如果出现error：not found：说明你的repo仓库名填写有问题"></a>1、如果出现error：not found：说明你的repo仓库名填写有问题</h3><h3 id="2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超"><a href="#2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超" class="headerlink" title="2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超"></a>2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Gitalk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Github搭建网站</title>
       <link href="/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
       <url>/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</url>

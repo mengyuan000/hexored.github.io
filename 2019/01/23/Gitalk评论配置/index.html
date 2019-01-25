@@ -5,9 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 热带猫">
-    <meta name="description" content="Welcome to this! This is my very first post.Some information on the website:此网站是怎么搭建起来的
-此网站是再hexo主题框架的基础下，基于GitHub静态托管，我">
+    <meta name="keywords" content="Gitalk评论配置, 热带猫">
+    <meta name="description" content="对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。
+配置文件Gitalk是一个Github上的一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | 热带猫</title>
+    <title>Gitalk评论配置 | 热带猫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -274,13 +274,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/postImg/2-1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        Gitalk评论配置
                     </div>
                 </div>
             </div>
@@ -393,8 +393,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/Gitalk/" target="_blank">
+                                <span class="chip bg-color">Gitalk</span>
                             </a>
                         
                     </div>
@@ -405,8 +405,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/markdown/" class="post-category" target="_blank">
-                                markdown
+                            <a href="/categories/Github/" class="post-category" target="_blank">
+                                Github
                             </a>
                         
                     </div>
@@ -417,14 +417,14 @@
             <div class="post-info">
                 <span class="post-date">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-01-24
+                    2019-01-23
                 </span>
 
                 
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        154
+                        384
                     </span>
                     
 
@@ -447,19 +447,10 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Welcome-to-this-This-is-my-very-first-post"><a href="#Welcome-to-this-This-is-my-very-first-post" class="headerlink" title="Welcome to this! This is my very first post."></a>Welcome to this! This is my very first post.</h3><h4 id="Some-information-on-the-website"><a href="#Some-information-on-the-website" class="headerlink" title="Some information on the website:"></a>Some information on the website:</h4><p>此网站是怎么搭建起来的</p>
-<pre class=" language-bash"><code class="language-bash">此网站是再hexo主题框架的基础下，基于GitHub静态托管，我给他起名叫：Hello-World
-</code></pre>
-<p>此网站的作用是什么</p>
-<pre class=" language-bash"><code class="language-bash">目的是为了记录一些知识
-</code></pre>
-<p>主要知识方向是什么</p>
-<pre class=" language-bash"><code class="language-bash">以计算机、编程为主，今后会主要方向会向着Machine learning
-</code></pre>
-<p>他会一直存在吗？</p>
-<pre class=" language-bash"><code class="language-bash">会的！我给这个域名给他赋予了特殊的意义，它的法语谐音是热带猫，之前为了赠与某人，也正如我爱她一样。
-</code></pre>
-
+                <p>对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。</p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>Gitalk是一个Github上的一个利用lssues作为评论的项目。这个是项目仓库的地址<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">https://github.com/gitalk/gitalk</a>.<br>下载两个文件gitalk.min.js和gitalk.css到自己的本地项目目录。<br>把下列代码复制到需要的地方<br><img src="/postImg/2-2.jpg"><br>上面也看到了有几个数据需要填，比较重要的有clientID和clientSecret，怎么得到这两个数据呢，我们需要新建application得到。</p>
+<h2 id="新建OAuth"><a href="#新建OAuth" class="headerlink" title="新建OAuth"></a>新建OAuth</h2><p>开始新建OAuth application：地址：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br><img src="/postImg/2-3.jpg"><br>完成后会出现clientID和clientSecret的串码，复制串码到上面对应的位置，还有就是repo是一个仓库名字，不需要完整路径。还有就是Gitalk是根据id来创建lssues,所以想要不同，id也要不一样，也可以填相对路径indow.location.pathname，完成后保存文件。<br>保存后进入首次进入页面后会出现使用Github登录，随后出现初始化lssues，点击一次即可，不然会创建多个lssues,随后刷新就完成了。<br><img src="/postImg/2-4.jpg"></p>
+<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><h3 id="1、如果出现error：not-found：说明你的repo仓库名填写有问题"><a href="#1、如果出现error：not-found：说明你的repo仓库名填写有问题" class="headerlink" title="1、如果出现error：not found：说明你的repo仓库名填写有问题"></a>1、如果出现error：not found：说明你的repo仓库名填写有问题</h3><h3 id="2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超"><a href="#2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超" class="headerlink" title="2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超"></a>2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超</h3>
             </div>
             <hr>
 
@@ -599,7 +590,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">热带猫</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/24/hello-world/" class="b-link-green">Hello World</a>
+                    <a href="/2019/01/23/Gitalk评论配置/" class="b-link-green">Gitalk评论配置</a>
                 </p>
             </div>
         </div>
@@ -622,7 +613,7 @@
         owner: 'mengyuan000',
         admin: 'mengyuan000',
 		/*null,*/
-        id: '2019-01-24T19-40-29',
+        id: '2019-01-23T18-49-40',
         distractionFreeMode: false,  // Facebook-like distraction free mode
 		createIssueManually: true
     });
@@ -646,8 +637,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
                 <a href="/2019/01/24/hello-world/">
                     <div class="card-image">
@@ -661,9 +651,9 @@
                     <div class="summary">Welcome to this! This is my very first post.Some information on the website:此网站是怎么搭建起来的
 此网站是再hexo主题框架的基础下，基于GitHub静态托管，我</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -676,7 +666,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -695,27 +684,27 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/01/23/Gitalk评论配置/">
+                <a href="/2019/01/21/hexo_github搭建网站/">
                     <div class="card-image">
                         
-                        <img src="/postImg/2-1.jpg" class="responsive-img" alt="Gitalk评论配置">
+                        <img src="/postImg/1-1.jpg" class="responsive-img" alt="Hexo+Github搭建网站">
                         
-                        <span class="card-title">Gitalk评论配置</span>
+                        <span class="card-title">Hexo+Github搭建网站</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。
-配置文件Gitalk是一个Github上的一</div>
+                    <div class="summary">什么是Hexo?hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在Github和Heroku上，Hexo也是github的开源项目
+搭建步骤：1、获得域名而且Github托管网站，完全不需要备案</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-23
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Github/" class="post-category" target="_blank">
-                                    Github
+                            <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -725,8 +714,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Gitalk/" target="_blank">
-                        <span class="chip bg-color">Gitalk</span>
+                    <a href="/tags/node-js/" target="_blank">
+                        <span class="chip bg-color">node.js</span>
+                    </a>
+                    
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Github/" target="_blank">
+                        <span class="chip bg-color">Github</span>
                     </a>
                     
                 </div>
