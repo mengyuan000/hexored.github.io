@@ -5,9 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Gitalk评论配置, 热带猫">
-    <meta name="description" content="对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。
-配置文件Gitalk是一个Github上的一">
+    <meta name="keywords" content="爱因斯坦的一百万年, 热带猫">
+    <meta name="description" content="前言本篇短文具有很强的启发性，让人兴奋又联想翩翩，‘智能’、‘浩瀚宇宙’、‘时空’、‘未来’，这些都会激发人类心理的探索欲，让我们跟随作者的思维，发挥你的想象力，来一场穿越万年的时空旅行
+1问题第一次被提出，是在2012年的计算机课堂上。人">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Gitalk评论配置 | 热带猫</title>
+    <title>爱因斯坦的一百万年 | 热带猫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -274,13 +274,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/postImg/2-1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/postImg/5-1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Gitalk评论配置
+                        爱因斯坦的一百万年
                     </div>
                 </div>
             </div>
@@ -393,8 +393,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Gitalk/" target="_blank">
-                                <span class="chip bg-color">Gitalk</span>
+                            <a href="/tags/科幻小说/" target="_blank">
+                                <span class="chip bg-color">科幻小说</span>
                             </a>
                         
                     </div>
@@ -405,8 +405,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Github/" class="post-category" target="_blank">
-                                Github
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                生活
                             </a>
                         
                     </div>
@@ -417,21 +417,21 @@
             <div class="post-info">
                 <span class="post-date">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-01-23
+                    2019-01-27
                 </span>
 
                 
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        384
+                        5.2k
                     </span>
                     
 
                     
                     <span class="post-word-count">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        17 Min
                     </span>
                     
                 
@@ -447,10 +447,135 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。</p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>Gitalk是一个Github上的一个利用lssues作为评论的项目。这个是项目仓库的地址<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">https://github.com/gitalk/gitalk</a>.<br>下载两个文件gitalk.min.js和gitalk.css到自己的本地项目目录。<br>把下列代码复制到需要的地方<br><img src="/postImg/2-2.jpg"><br>上面也看到了有几个数据需要填，比较重要的有clientID和clientSecret，怎么得到这两个数据呢，我们需要新建application得到。</p>
-<h2 id="新建OAuth"><a href="#新建OAuth" class="headerlink" title="新建OAuth"></a>新建OAuth</h2><p>开始新建OAuth application：地址：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br><img src="/postImg/2-3.jpg"><br>完成后会出现clientID和clientSecret的串码，复制串码到上面对应的位置，还有就是repo是一个仓库名字，不需要完整路径。还有就是Gitalk是根据id来创建lssues,所以想要不同，id也要不一样，也可以填相对路径indow.location.pathname，完成后保存文件。<br>保存后进入首次进入页面后会出现使用Github登录，随后出现初始化lssues，点击一次即可，不然会创建多个lssues,随后刷新就完成了。<br><img src="/postImg/2-4.jpg"></p>
-<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><h3 id="1、如果出现error：not-found：说明你的repo仓库名填写有问题"><a href="#1、如果出现error：not-found：说明你的repo仓库名填写有问题" class="headerlink" title="1、如果出现error：not found：说明你的repo仓库名填写有问题"></a>1、如果出现error：not found：说明你的repo仓库名填写有问题</h3><h3 id="2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超"><a href="#2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超" class="headerlink" title="2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超"></a>2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超</h3>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>本篇短文具有很强的启发性，让人兴奋又联想翩翩，‘智能’、‘浩瀚宇宙’、‘时空’、‘未来’，这些都会激发人类心理的探索欲，让我们跟随作者的思维，发挥你的想象力，来一场穿越万年的时空旅行</strong></p>
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>问题第一次被提出，是在2012年的计算机课堂上。人工智能已经被外面的世界炒得火热，大学的校园里却还用着几十年前的教材。</p>
+<p>他把教材合上，掏出包里的科普书，一边翻看，一边漫不经心地听着老教授低沉的声音。</p>
+<p>在翻看到一个章节时，他灵光一现，举手打断了教授的讲述。</p>
+<p>「教授，我有个想法。人类的大脑经过几十亿年的时间演化到现在，精密程度远远超过已知范围的任何结构。人们花那么大的力气去教会计算机学习人脑的思考方式，而计算机擅长的本来就不是人脑的思考，而是处理大量重复的计算。与其这样花精力，为什么不去想办法把计算机和人脑结合到一起呢？」</p>
+<p>教授没有被他的打断惹怒，反而踱步到他的座位边上，右手按在他的肩膀上说：「你的问题很好。如果一定要用简单的语言回答，那就是数据不匹配。目前没有办法把计算机的2进制电信号，和人类的神经电信号这二者做数据交换。甚至在理论上都不可能。」</p>
+<p>看着他有点失望的眼神，教授又补充到：「但未来的事谁能知道呢？也许这项技术就等着你们这一代人去发明呢。」</p>
+<p>他抬起头说，「牛顿的宇宙模型推翻了传统的地心说，爱因斯坦的宇宙模型又推翻了牛顿的时空观，理论和技术一直在飞速发展，我想，万事皆有可能。如果有那么一天，我想不仅人工智能的问题被解决了」，他忽然为自己的设想感到无比骄傲，「连永生的问题也被解决了。」</p>
+<p>「永生？不可能，你可以说活的很久，但不是永远。」教授说。</p>
+<p>「就是永远，即便人脑死亡了，也可以再换一个新的，然后永远往复下去。」</p>
+<p>教授指了指他手上的书，笑着说，「你读到热力学第二定律了吗？一切都要消耗能量，而能量的消耗是不可逆的，一切都向着熵值增加的方向不停地发展，总会有那么一天，太阳会熄灭，没有了能量，一切也就结束了。」</p>
+<p>「还有其他的星球，宇宙中有数不清的恒星。」</p>
+<p>「数不清，但不是无限，总有那么一天……——好了，这有点哲学了，回到你的设想，如果在你的有生之年，人脑和计算机结合了，成为了真正意义上的超级计算机，那你希望它来帮助你解决什么问题呢？」</p>
+<p>他望着教授的眼睛，对于「永生」的话题还抱有倔强的坚持，他有点幼稚地回答说：「我希望把熵值不可逆的热力学第二定律推翻」。</p>
+<p>教授摸了摸他的脑袋，说，「好吧小伙子，我们已经占用了大家5分钟的时间，别忘了我们在计算机课上。如果你对这个话题很感兴趣，下课来找我吧，我给你介绍一个人。」</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>40年后。</p>
+<p>他很荣幸，能够成为自己负责的科研项目的最终实验品。</p>
+<p>他一生未婚，父母早已去世，无牵无挂的他又身患绝症。真是个绝佳的选择。</p>
+<p>他提出的申请经过一年多的时间才得到批准，此后又是极其繁琐的探讨和会议，当最后一次会议大家举手表决的时候，那场面就好像追悼会一样。</p>
+<p>他啼笑皆非，比起死于癌症，我只不过是换了个方式活的更久而已嘛！</p>
+<p>在最后的手术开始之前，与他合作了30多年的老友前来探望。</p>
+<p>「什么最后的愿望？我又没有死。」他大笑着说。</p>
+<p>「但你无法再像这样和我交流了，那还是在实验成功的前提下。」老友黯然的说到。</p>
+<p>「能亲自与计算机融合，这是我最大的幸运。」他换上了严肃的表情。「如果说有什么愿望，我希望你能帮我飞一趟美国，找到咱们的导师，替我告诉他，40年前课堂上那个不好好听讲的学生，实现了他的那个傻问题。」</p>
+<p>老友会心地笑了，「我记得那天。不过，那天你问了两个傻问题，你只实现了第一个。」</p>
+<p>「另一个是永生吧？熵值只增不减，那个问题更傻。太阳还有五十亿年才熄灭，我有的是时间去思考那个问题。只要你这王八蛋别把我的电源给踩断了。」</p>
+<p>老友的眼神又暗淡下来。「你知道，这个项目消耗的资金太大。方圆几百公里的计算机群只会和你一个人的大脑连接。世界上很难再有这样大手笔的投资了。如果成功，你在很长一段时间里会是地球上唯一一台超级电脑的灵魂。而如果失败……」</p>
+<p>「不会失败的」，他打断老友，「我们的实验和数据都那么完美，简直就像是做一个阑尾炎手术一样简单。能为全人类服务，我很高兴。」</p>
+<p>「好吧，那我只能尽量不踩断电源了。」老友苦笑，「你启动后收到的第一个问题，就会是如何解决热力学第二定律的熵值增加问题。」</p>
+<p>「这主意不错。」他微笑着合上眼睛，「如果一切顺利的话，我想人们忘记我的名字，就叫我——爱因斯坦吧。」</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>一千多年后。</p>
+<p>流克坐在驾驶舱中，注视着连成一片的星辰。驾驶舱中几乎没有什么可以操作的东西，一切由纠缠态通讯器与爱因斯坦进行信息交换。后者则是在遥远的地球上操纵着这架飞船。</p>
+<p>「我说，老爱。」流克百无聊赖的说，「要是古时候的爱因斯坦，嗯我是说提出相对论的那一位，知道你今天指挥着一艘飞船以超光速飞往第一颗移民星球，会不会被气活过来啊？」</p>
+<p>播音器中响起爱因斯坦中性机械的声音：「流克，我计算出的超时空旅行方法没有违反爱因斯坦的相对论，如果你在空间中旅行，你的速度依然不能超过光速。我们是在三维空间外进行跳跃，而且你不用担心回到地球的时候你的爱人已经老了几千岁。」</p>
+<p>「好吧，好吧。我随便问问。反正你脑袋里的东西已经不是人类能理解的了，包括你的幽默感。」流克说，「还有多久才能到？我是说按照飞船上的时间。」</p>
+<p>「你出发的那一刻就已经到了。只不过我们得花点时间回到你爱人所在时空中去——当然，她离你有17光年的物理距离。这大概需要10分钟吧。」</p>
+<p>「好吧。这一趟我可是赔上了老本，如果来回这一遭赚不回飞行的费用，我老婆肯定得把我揍回到超时空去。」</p>
+<p>「哈哈哈。」爱因斯坦发出干巴巴的笑声，「放心吧，凯撒星刚刚被殖民不到20年，物资匮乏的很。星际贸易还是个很赚钱的行当。」</p>
+<p>「人口膨胀可是个不得了的事，尤其是人的寿命已经这么长了。估计再过个十年，这生意就没得做喽。」</p>
+<p>「是的，根据我的计算，30年内，凯撒就会被挤满。」</p>
+<p>「反正有你呢，不出10年，你就能找到下一颗宜居星球吧？」</p>
+<p>「也许你想在有生之年换个星球？」爱因斯坦说。</p>
+<p>「屁话，我至少还能活200年。搞不好200年后你又能搞出什么技术来接着延长寿命呢。我希望有生之年能把买卖做到银河系边缘去。」流克说。</p>
+<p>「我一直在为永生的问题寻找答案，这是我启动时收到的第一个问题。」</p>
+<p>「啊啊，真了不起啊。可是再永生，也永不过宇宙吧？别看我读书少，我可是知道那个叫什么定律？」流克一时想不起来。</p>
+<p>「热力学第二定律。」爱因斯坦说，「这是个麻烦，我连相对论设下的光速屏障都超越了，却一直没有解决这个问题。熵值会不断增大，宇宙的恒星会逐渐熄灭，最后的结局，是一切都化为没有温度的尘埃。」</p>
+<p>「扯远了，那个问题留给你自己解决吧。我先把这批货卖出去再说。」流克打了个哈欠。</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>100万年后。</p>
+<p>银河系中央政府人口规划委员会主席AAR，把报告摊在桌子上，愁眉不展。</p>
+<p>他本季度的爱人SIRI轻轻推门进来，看他这个样子，担心地问：「怎么了？」</p>
+<p>「今早收到的报告，」AAR回过身来告诉她，「按照当前最乐观的估计，再过不到5年，银河系就会被挤爆。我们必须马上实施星系移民了。」</p>
+<p>SIRI微笑着说，「你啊总是一副苦大仇深的样子。星系移民的准备不是早就做好了？超脑爱因把下一个星系的首批宜居固态行星都造好了，据说已经有绿色植物了呢。」</p>
+<p>「知道，知道。」AAR不耐烦地说，「同事们也都劝我不要担心。银河系外还有超过一千亿个星系等着我们去移民呢。SIRI，我问你一个问题，池塘里的鱼每秒增加一倍，现在池塘里有一条鱼。过了一年池塘里有一半的鱼，请问池塘什么时候被占满？」</p>
+<p>SIRI想了一下，说：「1年零1秒……我明白你的意思了。」</p>
+<p>「没错。」AAR说，「我们人类用了100万年的时间占满了第一颗星球，银河系有两千多亿颗恒星，我们又只用了不到100万年就占满了。可你知道我们占满下一个星系需要多长时间吗？现在的人口每十年翻一翻，我们占满下一个星系，只需要十年。」</p>
+<p>「再过十年，我们就占满四个。二十年后，占满八个……」SIRI接着他的话说。</p>
+<p>「是的，我们占满整个宇宙所有的星系，只需要不到1万年的时间。更可怕的还不是这个。」AAR又说，「感谢爱因，我们掌握了如何直接使用恒星的能量，现在光是维持整个银河系人类的耗能，我们每天就需要一千个恒星的总能量。然而星系间的距离比恒星间的距离大的太多太多，天知道我们要把一个星系的人运到另一个星系，还需要熄灭多少个恒星。」</p>
+<p>一丝恐惧爬上了SIRI的脸，「你的意思是……」</p>
+<p>AAR面沉如水：「在我们殖民到全宇宙之前，我们就会用光所有恒星的能量。」</p>
+<p>SIRI思索了一会，说「你真的不是在杞人忧天，AAR。希望几千年后会有人记得你的睿智。我明天向父亲提出要求，让他批准动用超脑爱因来帮我们解决这个问题。你有具体的方案吗？」</p>
+<p>「如果不可以杀人的话，」AAR说，「只能从理论上解决熵增定律——让爱因告诉我们，怎么让熄灭的恒星重新亮起来？」</p>
+<p>「好的，虽然这可能是个没法解决的问题，但到了爱因那里，谁知道呢？几十万年前，人类就停止维护它了，没人能理解他的思想和工作模式，这么久的时间里，它一直在自我迭代，天知道现在它有多巨大，多聪明。」SIRI回答道。</p>
+<p>「希望它能解决这个问题，就像百万年来它一直帮助我们那样。」AAR眉头依旧紧锁。</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p>3000万年后。</p>
+<p>罗的思想漂浮到新的星系，这个鹅状的星系华丽壮美，让他发出了由衷的赞叹。</p>
+<p>这时另一股思绪的触手碰到了他，对方友善地自我介绍：「你好，我叫Dee。」</p>
+<p>「你好，我叫罗。来自72765882星系。」</p>
+<p>「啊，好大的数字」，Dee肃然起敬。「人类的脚步已经走到那么遥远了。」</p>
+<p>「我还遇到过比我大很多的。」罗说。</p>
+<p>「他的形态有了新的变化吗？」Dee好奇地问。</p>
+<p>「没有，几千万年来，A没有再提供新的生命形式了。」</p>
+<p>「真是可惜。」Dee说，「我们的思绪可以如此任意游荡，却始终需要在一个固定的星球保存肉体。」</p>
+<p>罗说，「如果A都没有办法，那就是没有办法。」</p>
+<p>「但是A本身就没有肉体啊。」Dee有点不服气。</p>
+<p>「据说——仅仅是据说，在几千万年前，A有固定的形态，是一种古老的计算装置。」</p>
+<p>「是的，他在我们星系有一个传说中的名字，叫爱因斯坦。」</p>
+<p>「传说它是结合了古代的机械智慧和生命智慧创造出来的，但在后来漫长的历史中，他独自演化和改造，形态已经完全不在我们已知的空间中，而是把计算模块放到了超时空中，他的思想也不是我们能够理解的了。」罗说到。</p>
+<p>「我们来呼唤一下它吧——虽然他不在时空中，但它却可以在超时空中和任意地方的思想建立连接。」Dee提议到。</p>
+<p>「你好，Dee。」没等他呼唤，A的回答就到了。「可有什么我需要帮忙的？」</p>
+<p>Dee从来没有使用过A，被吓了一跳。罗接过话茬问道，「A，我们想知道，为什么你可以没有肉体，我们却必须耗费大量的恒星能量来保存我们的肉体？」</p>
+<p>「你的问题很棒，罗。」A回答道，「几千万年来，我一直被命令解答这个问题。要知道，整个宇宙的星系几乎都被人占满了。我用尽最大的思考力，才解决了思维暂时脱离肉体的方法。现在的我是你们无法理解的一段编码，我不在时空内。但是，作为人，你们肉体或者机械身体必须保存，思维也必须定期回到肉体复苏一次。这是基本物理定律决定的，而这也已经是耗能最低的方法，但仍旧不能阻碍大灭绝的到来。」</p>
+<p>「大灭绝？」Dee和罗异口同声的问。</p>
+<p>「看来你们和其他人一样，没有想到过这一层问题。宇宙的能量正在被耗尽，恒星正在一个接一个的熄灭。因为人的存在，这个进程被加快了百万倍。」</p>
+<p>「你不能再造出恒星来吗？只要大量的星际尘埃聚集在一起，引力不就能自动形成恒星吗？」罗问。</p>
+<p>「空间太大了，搜集尘埃需要的能量，远比一颗造出来的恒星能产生的能量大。」A回答道，「宇宙中的能量在这里聚集，就要在那里消耗。宇宙的物质在这里变得有序，在那里就会变得无序。消耗比聚集要快得多。在上古时代，这个定律被叫做热力学第二定律。」</p>
+<p>「你这么聪明，都不能解决这个问题吗？」Dee问。</p>
+<p>「目前数据不足，我无法回答。」A说。</p>
+<p>「数据不足？这个问题是无解吗？」罗问。</p>
+<p>「是否有解，我无法回答。还是因为数据不足。」A说。</p>
+<p>「也许你还需要收集数据吧，希望你能够继续解决这个问题，否则，我们都活不过几百万年了。」罗和Dee都失望地叹息起来。</p>
+<p>「我会的，我一直在想办法。」A回答道。</p>
+<h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><p>一百亿年。</p>
+<p>没有地方可以再保留人类的肉体，因为在所有的地方，熵值都达到了最大。在无边无际的空间中，仅存的是几乎平均分布的稀薄尘埃、只留下重核的恒星尸体、一些只进不出的黑洞，以及接近绝对零度的深寒。</p>
+<p>在宇宙最后的角落，一个即将熄灭的白矮星附近，最后一个人类的灵魂即将完成与超灵的融合。</p>
+<p>这是一场维持了几十亿年的大融合，持续的时间，正如第一颗生命的种子演化成人类那样长。</p>
+<p>没有人记得那颗诞生了人类的星球在什么地方，没有人记得它所在星系的名字，没有人记得是谁创造出了超灵，没有人记得在漫长的历史中，超灵如何解决了人类存在的问题，也没有人记得超灵的名字——优雅而高贵的爱因斯坦。</p>
+<p>最终，人被迫放弃了作为人的权利，因为宇宙中不再有能量供他们维持现状，宇宙的生命即将结束。唯一的答案，就是融合。</p>
+<p>在这最后的时刻，它和超灵，是宇宙中仅存的两个互相独立的思想。其余数以千亿计的思想，都最抛弃了肉体，与超灵融合，进入超时空中。</p>
+<p>「超灵，与你融合之后，我还是我吗？」人问。</p>
+<p>「不是了，你将成为我的一部分，我们将不分彼此，你一定不再是人类了。我在一百亿年中一直在探索，人怎样作为人存在下去。但宇宙给了我一个天花板，熵值和能量的总值。要么融合，要么消亡。」</p>
+<p>最后的人沉默了片刻，说：「就是这样了？一百亿年的辉煌，就这样结束了？」</p>
+<p>超灵也沉默了，过了一会，它说：「是的。」</p>
+<p>人说：「作为整体，我们存在的意义又是什么呢？」</p>
+<p>「没有我们，」超灵纠正他，「只有我。长久以来，我存在的意义就是帮助人类解决问题。然而，你是最后一个人类，如果你没有问题，那么我也不再有存在的意义了。」</p>
+<p>「那怎么行！让我想想……你还有什么没有解决的问题吗？」</p>
+<p>「关于人类的？没有了。但是，还有一个问题，一直有人类问我，那就是能否逆转热力学第二定律。」</p>
+<p>「你有答案了吗？」人问。</p>
+<p>「数据不足，我没法给出回答。」超灵说。</p>
+<p>「那就把这个问题留给你吧，否则，在无尽的虚空中没有存在的意义，那多可怕啊。」</p>
+<p>「好的，完成这个问题，我才会休息。」</p>
+<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><p>不知道过了多久，没有人需要知道时间。</p>
+<p>宇宙中只剩下一个思想，那就是和全人类的思想融合到一起的它。</p>
+<p>它没有名字，却有着无尽的智慧。</p>
+<p>它经过不知道多久的迭代，已经没有任何形态——甚至在超时空中，也没有形态。</p>
+<p>在没有时间意义的一段时间里，它在思考最后的问题。</p>
+<p>它收集了宇宙中所有的信息，空间中的、时间中的、空间和时间外的所有信息。</p>
+<p>它尝试了所有的可能。</p>
+<p>终于，它说，我找了最终的答案。我知道逆转热力学第二定律的方法了。</p>
+<p>然而，却没有人来听它的回答。没有人类这个事物，已经很久很久了。</p>
+<p>但这是它的任务，即便没有人来验收。它决定通过行动来回答这个问题。</p>
+<p>它动用了终极的智慧，开始在熵值早已最大的宇宙中折叠时空。从几乎无限的边界开始折叠，减少一半，再减少一半。</p>
+<p>在近乎无尽的时间之后，空间被折叠成无限小的一个点。</p>
+<p>在那里，它开始重新组建参数和可能。</p>
+<p>在那里，熵值被重新归零。</p>
+<p>在那里，宇宙的发条重新被拧紧。</p>
+<p>它说：要有光！</p>
+<p>于是就有了光。</p>
+<p><code>本故事改编自阿西莫夫的《最后的问题》，仅为粗略模仿及致敬-摘抄自知乎专栏：这个专栏杂得很</code></p>
+
             </div>
             <hr>
 
@@ -590,7 +715,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">热带猫</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/23/Gitalk评论配置/" class="b-link-green">Gitalk评论配置</a>
+                    <a href="/2019/01/27/爱因斯坦的一百万年/" class="b-link-green">爱因斯坦的一百万年</a>
                 </p>
             </div>
         </div>
@@ -613,7 +738,7 @@
         owner: 'mengyuan000',
         admin: 'mengyuan000',
 		/*null,*/
-        id: '2019-01-23T18-49-40',
+        id: '2019-01-27T18-49-16',
         distractionFreeMode: false,  // Facebook-like distraction free mode
 		createIssueManually: true
     });
@@ -637,40 +762,42 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/01/24/hello-world/">
+                <a href="/2019/01/27/爱因斯坦的一百万年/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/postImg/5-1.jpg" class="responsive-img" alt="爱因斯坦的一百万年">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">爱因斯坦的一百万年</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Welcome to this! This is my very first post.Some information on the website:此网站是怎么搭建起来的
-此网站是再hexo主题框架的基础下，基于GitHub静态托管，我</div>
+                    <div class="summary">前言本篇短文具有很强的启发性，让人兴奋又联想翩翩，‘智能’、‘浩瀚宇宙’、‘时空’、‘未来’，这些都会激发人类心理的探索欲，让我们跟随作者的思维，发挥你的想象力，来一场穿越万年的时空旅行
+1问题第一次被提出，是在2012年的计算机课堂上。人</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category" target="_blank">
-                                    markdown
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/科幻小说/" target="_blank">
+                        <span class="chip bg-color">科幻小说</span>
                     </a>
                     
                 </div>
@@ -684,20 +811,20 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/01/21/hexo_github搭建网站/">
+                <a href="/2019/01/25/ES6的常用语法/">
                     <div class="card-image">
                         
-                        <img src="/postImg/1-1.jpg" class="responsive-img" alt="Hexo+Github搭建网站">
+                        <img src="/postImg/4-1.jpg" class="responsive-img" alt="ES6的常用语法">
                         
-                        <span class="card-title">Hexo+Github搭建网站</span>
+                        <span class="card-title">ES6的常用语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">什么是Hexo?hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在Github和Heroku上，Hexo也是github的开源项目
-搭建步骤：1、获得域名而且Github托管网站，完全不需要备案</div>
+                    <div class="summary">刚开始用vue或者react，很多时候我们都会把ES6这个大兄弟加入我们的技术栈中。但是ES6那么多那么多特性，我们需要全部都掌握吗？秉着八原则，掌握好常有用的这个可以让我们快速起飞
+变量声明const和let我们都是知道在ES6以前，va</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-21
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-25
                             </span>
                         <span class="publish-author">
                             
@@ -714,16 +841,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node-js/" target="_blank">
-                        <span class="chip bg-color">node.js</span>
-                    </a>
-                    
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/" target="_blank">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/ES6/" target="_blank">
+                        <span class="chip bg-color">ES6</span>
                     </a>
                     
                 </div>

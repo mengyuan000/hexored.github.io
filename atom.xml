@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-25T09:20:50.654Z</updated>
+  <updated>2019-01-27T10:54:56.791Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>爱因斯坦的一百万年</title>
+    <link href="http://yoursite.com/2019/01/27/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E7%9A%84%E4%B8%80%E7%99%BE%E4%B8%87%E5%B9%B4/"/>
+    <id>http://yoursite.com/2019/01/27/爱因斯坦的一百万年/</id>
+    <published>2019-01-27T10:49:16.854Z</published>
+    <updated>2019-01-27T10:54:56.791Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="科幻小说" scheme="http://yoursite.com/tags/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6的常用语法</title>
