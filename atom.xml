@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-27T10:54:56.791Z</updated>
+  <updated>2019-01-28T05:34:11.393Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20个非常有用的JAVA程序片段</title>
+    <link href="http://yoursite.com/2019/01/28/20%E4%B8%AA%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84JAVA%E7%A8%8B%E5%BA%8F%E7%89%87%E6%AE%B5/"/>
+    <id>http://yoursite.com/2019/01/28/20个非常有用的JAVA程序片段/</id>
+    <published>2019-01-28T05:01:27.506Z</published>
+    <updated>2019-01-28T05:34:11.393Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Java是目前使用率最高且最丰富的语言，基本大型公司都是首选java,下面是20段Java程序片段，应该会用得到&lt;/p&gt;
+&lt;h3 id=&quot;1-字符串有整型的相互转换&quot;&gt;&lt;a href=&quot;#1-字符串有整型的相互转换&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://yoursite.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>爱因斯坦的一百万年</title>
