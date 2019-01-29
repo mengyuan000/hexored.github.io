@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-28T05:34:11.393Z</updated>
+  <updated>2019-01-29T04:57:18.674Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux系统文件与目录基本操作指令</title>
+    <link href="http://yoursite.com/2019/01/29/Linux%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/"/>
+    <id>http://yoursite.com/2019/01/29/Linux系统文件与目录基本操作指令/</id>
+    <published>2019-01-29T04:08:55.075Z</published>
+    <updated>2019-01-29T04:57:18.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;退出linux&quot;&gt;&lt;a href=&quot;#退出linux&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux指令" scheme="http://yoursite.com/tags/Linux%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>20个非常有用的JAVA程序片段</title>
