@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Linux软件包和进程及外存管理, 热带猫">
+    <meta name="description" content="tar包管理创建tar文件tar 【主选项+辅助选项】 文件或目录
+
+主选项：
+
+-c：创建一个新的tar文件
+-r：在tar文件尾部追加文件
+-t：显示tar文件内容
+-u：更新tar文件
+-x：从tar文件中取出文件
+-delete：从">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Linux软件包和进程及外存管理 | 热带猫</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+</head>
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <a href="/" class="waves-effect waves-light">
+                        
+                        <img src="/medias/logo.png" class="logo-img hide-on-small-only">
+                        
+                        <span class="logo-span">热带猫</span>
+                    </a>
+                </div>
+                
+
+<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>Index</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>Tags</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>Categories</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>Archives</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>About</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>Friends</span>
+        </a>
+    </li>
+    
+    <li>
+        <a id="toggleSearch" class="waves-effect waves-light">
+            <i id="searchIcon" class="mdi-action-search" title="Search"></i>
+        </a>
+    </li>
+
+</ul>
+
+<div class="side-nav" id="mobile-nav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">热带猫</div>
+        <div class="logo-desc">
+            
+            Love life
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                Index
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                Tags
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                Categories
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                Archives
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                About
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                Friends
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/mengyuan000/hexored.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+
+    <div class="social-link"><a href="https://github.com/mengyuan000" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="https://mail.qq.com" class="tooltipped" target="_blank" data-tooltip="321002645@qq.com" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 321002645" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
+
+<a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <i class="fa fa-rss"></i>
+</a>
+</div>
+</div>
+
+            </div>
+        </div>
+
+        
+        <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/mengyuan000/hexored.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewbox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+</a>
+        
+    </nav>
+</header>
+
+
+
+
+
+<div class="bg-cover post-cover" style="background-image: url('/postImg/9-1.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        Linux软件包和进程及外存管理
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1,
+    #articleContent h2,
+    #articleContent h3,
+    #articleContent h4,
+    #articleContent h5,
+    #articleContent h6 {
+        padding-top: 76px;
+        margin-top: -76px;
+    }
+
+    #articleContent h1 {
+        line-height: 3.5rem;
+    }
+
+    #articleContent h2 {
+        line-height: 3.2rem;
+    }
+
+    #articleContent h3 {
+        line-height: 2.8rem;
+    }
+
+    #articleContent h4 {
+        line-height: 2.5rem;
+    }
+
+    #articleContent h5 {
+        line-height: 2.2rem;
+    }
+
+    #articleContent h6 {
+        line-height: 1.9rem;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s6">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux指令/" target="_blank">
+                                <span class="chip bg-color">Linux指令</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s6 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                Linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <span class="post-date">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2019-01-31
+                </span>
+
+                
+                    
+                    <span class="post-word-count">
+                        <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
+                        7.4k
+                    </span>
+                    
+
+                    
+                    <span class="post-word-count">
+                        <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
+                        28 Min
+                    </span>
+                    
+                
+				
+				
+                    <span id="busuanzi_container_page_pv" class="post-read">
+                        <i class="fa fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+				
+            </div>
+        </div>
+        <hr>
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="tar包管理"><a href="#tar包管理" class="headerlink" title="tar包管理"></a>tar包管理</h2><h3 id="创建tar文件"><a href="#创建tar文件" class="headerlink" title="创建tar文件"></a>创建tar文件</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">tar</span> 【主选项+辅助选项】 文件或目录
+</code></pre>
+<p><strong>主选项：</strong></p>
+<ul>
+<li><code>-c</code>：创建一个新的tar文件</li>
+<li><code>-r</code>：在tar文件尾部追加文件</li>
+<li><code>-t</code>：显示tar文件内容</li>
+<li><code>-u</code>：更新tar文件</li>
+<li><code>-x</code>：从tar文件中取出文件</li>
+<li><code>-delete</code>：从tar文件中删除文件</li>
+<li><code>-d</code>：比较tar文件或文件系统的不同之处</li>
+</ul>
+<p><strong>辅助选项：</strong></p>
+<ul>
+<li><code>-f</code>：使用tar文件</li>
+<li><code>-v</code>：显示处理文件的详细信息</li>
+<li><code>-X</code>：排除文件集合</li>
+<li><code>-z</code>：用gzip压缩或解压</li>
+<li><code>-C</code>：改变目录</li>
+</ul>
+<p><strong>例：</strong></p>
+<p>1)将./ccc/目录下所有文件打包成cccall.tar文件</p>
+<p><code>tar -cvf cccall.tar ./ccc/*</code></p>
+<p>2)把文件file1和file2打包成txt.tar文件</p>
+<p><code>tar  -cvf   txt.tar   file1  file2</code></p>
+<p>3)显示tar文件内容</p>
+<p><code>tar  -tf  aaa.tar</code></p>
+<p>4)从tar文件中取出文件</p>
+<p><code>tar  -xvf  aaa.tar</code></p>
+<p>5)向aaa.tar尾部追加文件myfile</p>
+<p><code>tar -rf  aaa.tar  myfile</code></p>
+<h3 id="Linux下常用的压缩工具"><a href="#Linux下常用的压缩工具" class="headerlink" title="Linux下常用的压缩工具"></a>Linux下常用的压缩工具</h3><h4 id="gzip压缩工具"><a href="#gzip压缩工具" class="headerlink" title="gzip压缩工具"></a>gzip压缩工具</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">gzip</span> <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 压缩或文件
+</code></pre>
+<p><strong>选项：</strong></p>
+<ul>
+<li><code>-c</code>：将输出写到标准输出上，并保留原有文件</li>
+<li><code>-d</code>：将压缩文件解压</li>
+<li><code>-r</code>：递归的查找指定目录并压缩其中的所有文件或者是解压</li>
+<li><code>-v</code>：对每一个压缩和解压缩的文件，显示文件名和压缩比</li>
+<li><code>-9或best</code>：表示最慢压缩方法，系统默认值为6</li>
+<li><code>-t</code>：测试，检查压缩文件是否完整</li>
+<li><code>-l</code>：对每个压缩文件显示压缩文件的大小、未压缩文件的大小，压缩比和未压缩文件的名字</li>
+</ul>
+<p><strong>例：*
+</strong>压缩当前目录下的所有文件，并且显示压缩不比，显示已经代替原来的文件**<br><code>gzip -v</code></p>
+<p><strong>提示：gzip只能对单个文件进行压缩，压缩后替换原来的文件，但不能呢个对多个文件进行压缩，正因如此，Linux提供了tar命令，用于将若干个文件或文件夹打包成一个文件，然后再压缩成一个.gz文件</strong></p>
+<h4 id="gzip解压文件"><a href="#gzip解压文件" class="headerlink" title="gzip解压文件"></a>gzip解压文件</h4><p>使用<code>gzip-dv*</code>对当前目录下的压缩文件进行解压</p>
+<p><strong>例：</strong><br>对当前文件下进行解压<br><code>gzip-dv *</code></p>
+<p>在tar命令中嵌入压缩命令<br><code>.tar.gz</code></p>
+<p>将当前目录下所有文件打包并压缩成ping.tar.gz并显示出来进度<br><code>tar cvzf   ping.tar.gz  ./*</code></p>
+<p>把打包文件解压之当前目录下<br><code>tar -zxvf  file.tar.gz</code></p>
+<p>把打包压缩文件解压之/text中<br><code>tar -zxvf  file.tar.gz  -C  test</code></p>
+<h4 id="zip-unzip命令"><a href="#zip-unzip命令" class="headerlink" title="zip/unzip命令"></a>zip/unzip命令</h4><p><strong>zip命令</strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">zip</span> 【选项】压缩后文件名  代压缩文件名或文件夹
+</code></pre>
+<p><strong>选项：</strong></p>
+<ul>
+<li><code>-l</code>：最快压缩，压缩率最差</li>
+<li><code>-9</code>：最大压缩，压缩率最高</li>
+<li><code>-d</code>：从zip文件中移除一个文件</li>
+<li><code>-f</code>：以新文件取代现有文件</li>
+<li><code>-F</code>：修复已经损坏的压缩文件</li>
+<li><code>-g</code>：将文件压缩并附加到特定文件</li>
+<li><code>h</code>：显示附注说明</li>
+<li><code>-i</code>：指定要加入的某些特定文件</li>
+<li><code>L</code>：显示zip命令的版权</li>
+<li><code>-m</code>：将特定文件移入zip文件中，并且删除原文件</li>
+<li><code>-n</code>：不压缩特定扩展名文件</li>
+<li><code>-o</code>：将zip文件的时间设成最后修正zip文件的时间</li>
+<li><code>-r</code>：包含子目录</li>
+<li><code>-T</code>：测试zip文件是否正常</li>
+<li><code>-u</code>：只更新改变过的文件、文件夹和新文件</li>
+<li><code>-v</code>：显示版本信息和详细资料</li>
+<li><code>-x</code>：不需要压缩的文件</li>
+</ul>
+<p>提示：使用zip命令可以将许多文件压缩成一个文件，这与gzip是有区别的</p>
+<p><strong>例子：</strong><br>1）压缩文件或文件夹<br><code>zip  -r  gong.zip   ./*</code><br>//递归压缩当前目录和子目录下的所有文件和文件夹为gnog.zip，显示压缩过程中每个文件的压缩比  </p>
+<p>2）显示压缩文件的内容信息<br><code>zip -v gnog.zip      //查看gong.zip文件内容</code></p>
+<p>3）从压缩文件中删除某个文件<br><code>zip -d gong.zip smart.txt</code><br>//删除gong.zip压缩文件中smart.txt文件</p>
+<p>4）向压缩文件中添加文件<br><code>zip -m  gong.zip  ./rpm_info.txt</code><br>//向压缩文件中添加一个txt文件</p>
+<p><strong>unzip命令</strong><br>用于解压缩扩展名为zip的压缩文件。Windows下的winzip压缩的文件Linux下也可以用unzip解压</p>
+<pre class=" language-bash"><code class="language-bash">unzip 【选项】  压缩文件名.zip
+</code></pre>
+<p>选项：</p>
+<ul>
+<li><code>-x</code>： 文件列表：解压缩文件但不包括指定的文件</li>
+<li><code>-v</code>： 查看压缩文件目录，但不解压缩</li>
+<li><code>-t</code>：册设文家有无损坏，但不解压</li>
+<li><code>-d</code>： 目录：把压缩文件解压到指定的目录</li>
+<li><code>-z</code>：只显示压缩文件的注释</li>
+<li><code>-n</code>：不覆盖已经存在的文件</li>
+<li><code>-o</code>：覆盖已经存在的文件且不要求用户确认</li>
+<li><code>-j</code>：不重建文档的目录结构，把所有文件解压到同一目录下</li>
+</ul>
+<p><strong>(1)将压缩文件解压到当前目录</strong></p>
+<pre class=" language-bash"><code class="language-bash">unzip gong.zip
+</code></pre>
+<p><strong>(2)将压缩文件解压到指定目录</strong></p>
+<pre class=" language-bash"><code class="language-bash">unzip gong.zip  -d/tmp
+</code></pre>
+<h3 id="bzip2命令"><a href="#bzip2命令" class="headerlink" title="bzip2命令"></a>bzip2命令</h3><p><strong>bzip2是一个无损压缩软件，具有高质量的数据压缩能力，可以压缩到原来文件的10%-15%。</strong><br>参数：</p>
+<ul>
+<li><code>-c</code>：将数据压缩或解压至标准输出</li>
+<li><code>-d</code>：强制解压缩</li>
+<li><code>z</code>：和d选项类似。</li>
+<li><code>-t</code>：检查指定文件的完整性，但并不对其解压缩。</li>
+<li><code>-f</code>：强制覆盖输出文件，通常bzip2不会覆盖已经存在的文件</li>
+<li><code>-k</code>：在压缩或解压缩时保留输出文件</li>
+<li><code>-s</code>：在压缩/解压缩以及检查时减少内存用量。采用一种修正的算法进行压缩和测试，每个数据块仅需2.5个字节</li>
+<li><code>v</code>：显示每个被处理文件的压缩率。</li>
+</ul>
+<p><strong>用bzip解压文件</strong></p>
+<pre class=" language-bash"><code class="language-bash">bzip *    //用bzip命令压缩当前目录下的所有文件夹
+</code></pre>
+<p><strong>用bunzip2解压文件</strong></p>
+<pre class=" language-bash"><code class="language-bash">bunzip  *
+</code></pre>
+<p>提示：如果解压缩过程中有文件不是bz2后缀，则对该文件解压缩时会报错</p>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><p>Linux是一个<strong>多用户、多任务操作系统</strong>。在这样的的系统中，各种计算机资源的分配和管理都以<strong>进程为单位</strong>，为了协调多个进程对这种共享资源的访问，操作系统要跟踪多种进程的活动，以及他们对系统资源的使用情况，从而实施对进程和资源的动态管理。</p>
+<h3 id="一、进程和作业的基本概念"><a href="#一、进程和作业的基本概念" class="headerlink" title="一、进程和作业的基本概念"></a>一、进程和作业的基本概念</h3><h4 id="1-进程"><a href="#1-进程" class="headerlink" title="1.进程"></a>1.进程</h4><p><strong>进程是指一个具有独立的程序的一次运行过程</strong>。也是系统进行资源分配和调度的基本单位，及每个程序模块和它执行时所处理的数据组成了进程。</p>
+<h4 id="2-作业"><a href="#2-作业" class="headerlink" title="2.作业"></a>2.作业</h4><p><strong>正在执行的一个或多个相关进程可以形成一个作业</strong>。使用管道命令和重定向命令，一个作业可以启动多个进程<br>    根据作业的运行方式的不同，可将作业分为两大类。<br>    <strong><code>前台作业：</code></strong>运行与前台，用户可对其进行交互操作。<br>   <strong><code>后台作业：</code></strong>运行与后台，不接受终端的输入，单向终端输出执行结果。<br>作业既可以运行在前台也可以在后台，但同一时刻，每个用户只能有一个前台作业</p>
+<h4 id="3-进程的基本状态以及转换"><a href="#3-进程的基本状态以及转换" class="headerlink" title="3.进程的基本状态以及转换"></a>3.进程的基本状态以及转换</h4><p><strong>进程的基本状态</strong><br>通常在操作系统中，进程至少要有三种基本状态，分别为：运行态、就绪态和阻塞态。<br>Linux系统中进程一般有以下几种：<br>运行态：（Running）、就绪态（Ready）、阻塞态（Blocked）、睡眠态（Sleeping）、停止态（Task_Interruptible）、僵死态（Task_Zomie）</p>
+<p><strong>进程间的转换</strong></p>
+<p><img src="/postImg/9-2.jpg"></p>
+<p><strong>进程的类别</strong><br><strong><code>交互进程：</code></strong>由一个shell启动的进程，每个进程都有其自己的特点和属性<br><strong><code>批处理进程：</code></strong>不需要与终端相关，提交在等待队列的作业。<br><strong><code>守候进程：</code></strong>Linux系统启动时自动启动，并在后台运行，用于监视特定服务</p>
+<p><strong>Linux守候进程介绍</strong><br>守候进程是在后台运行而没有终端或登陆shell与之结合在一起的进程。<strong>守候进程在程序启动时开始运行，程序结束时停止。这些进程没有控制终端，所有称为在后台运行。</strong>Linux系统有许多标准的守候进程，其中一些周期性的运行来完成特定的任务，其余的连续运行，等待处理系统中发生的某些特定的事件。</p>
+<p><strong>启动守候进程有如下几种方法</strong><br><strong><code>在引导系统时启动：</code></strong>此情况下的守候进程通常在系统启动script的执行期间被启动，这些script一般存放在/etc /rc.d中<br><strong><code>手动从shell提示符启动00000：</code></strong>任何具有相应的执行权限的用户都可以使用这种方法启动守候进程<br><strong><code>使用crond守候进程启动：</code></strong>这个说后进程查询放在/var/spool/cron/crontabs目录中的一组文件，这些文件规定了需要周期性执行的任务。<br><strong><code>执行at命令启动：</code></strong>在规定的一个日期执行一个程序。</p>
+<p><strong>重要的守候进程介绍</strong></p>
+<ul>
+<li><code>amd</code>：自动安装NFS（网络文件系统）</li>
+<li><code>apmd</code>：高级电源管理</li>
+<li><code>httpd</code>：web服务器</li>
+<li><code>xinetd</code>：支持多种网络服务的核心守候程序</li>
+<li><code>crond</code>：Linux下的计划任务</li>
+<li><code>dhcpd</code>：启动一个DHCP（动态IP地址分配）服务器</li>
+<li><code>gated</code> ：网管路由守候进程，使用动态的OSPF路由选择协议</li>
+<li><code>lpd</code>：打印服务</li>
+<li><code>named</code>：DNS服务</li>
+<li><code>netfs</code>：安装NFS、Samba、NetWare网络文件系统</li>
+<li><code>network</code>：激活已配置网络接口的脚本程序</li>
+<li><code>nfsd</code>：NFS服务器</li>
+<li><code>sendmail</code>：邮件服务器sendmail</li>
+<li><code>smb</code>：Samba文件共享/打印服务</li>
+<li><code>snmpd</code>：本地简单网络管理守候进程</li>
+<li><code>Syslog</code>：一个让系统引导时启动syslog和klogd系统日志守候进程的脚本</li>
+</ul>
+<h3 id="二、进程和作业管理"><a href="#二、进程和作业管理" class="headerlink" title="二、进程和作业管理"></a>二、进程和作业管理</h3><h4 id="手工启动"><a href="#手工启动" class="headerlink" title="手工启动"></a>手工启动</h4><p>手工启动是指由用户输入shell命令后直接启动进程<br><strong>前台：一般直接输入程序名（#vi）就可以启动一个前台程序</strong><br><strong>后台：在vi后面加 &amp; </strong><br>提示：以上两种进程都是由shell进程产生的，也就是说shell创建了新进程，这种称父子关系，shell是父进程，一个父进程可以有多个子进程。</p>
+<p><strong>shell命令</strong></p>
+<h4 id="ps命令"><a href="#ps命令" class="headerlink" title="ps命令"></a>ps命令</h4><p>功能：静态显示系统进程信息</p>
+<pre class=" language-bash"><code class="language-bash">格式：ps【参数】
+</code></pre>
+<ul>
+<li><code>-a</code>：显示终端上的所有进程（不包括没有终端的进程）</li>
+<li><code>-u</code>：显示进程所有者以及其他一些进程信息，如用户名和时间</li>
+<li><code>-x</code>：显示所有非控制终端的进程</li>
+<li><code>-e</code>：显示所有进程（不现实进程状态）</li>
+<li><code>-f</code>：完全显示</li>
+<li><code>-l</code>：以长格式显示进程信息</li>
+<li><code>-w</code>：宽输出</li>
+<li><code>-pid</code>：显示由进程ID指定的进程的信息</li>
+<li><code>-tty</code>：显示指定终端上的进程信息</li>
+<li><code>-help</code>：显示该命令的版本信息</li>
+</ul>
+<p><strong>示例：</strong><br><code>ps -ef</code>  //显示系统中所有进程的全面信息<br><code>ps -aux</code>//显示所有用户有关进程的所有信息</p>
+<p><strong>进程信息中各项参数说明：</strong></p>
+<ul>
+<li><code>USER</code>：进程的启动项</li>
+<li><code>PID</code>：进程号</li>
+<li><code>%CPU</code>：占CPU的百分比</li>
+<li><code>%MEM</code>：占用内存比</li>
+<li><code>VSZ</code>：占用的虚拟内存大小</li>
+<li><code>RSS</code>：占用的物理内存大小</li>
+<li><code>TTY</code>：进程的工作终端（？表示没有终端）</li>
+<li><code>STAT</code>：进程的状态。其中R表示正在执行中；S表示休眠静止状态；T表示暂停执行；Z表示僵死状态。</li>
+<li><code>COMMAND</code>：运行时间</li>
+</ul>
+<h4 id="top命令："><a href="#top命令：" class="headerlink" title="top命令："></a>top命令：</h4><p>ps命令只提供过去完成过的进程的一次性快照，top命令它提供了对系统处理器状态的实时监视，显示了系统中CPU最敏感的任务列表<br><strong>功能：</strong>动态显示CPU利用率、内存利用率和进程状态等相关信息。 </p>
+<pre class=" language-bash"><code class="language-bash">格式：top【选项】妙数
+</code></pre>
+<ul>
+<li><code>-d</code>：指定美两次屏幕信息的刷新之间的时间间隔，用户可以使用交互命令s改变它</li>
+<li><code>-q</code>：使top没有任何延时的进行刷新。如果由超级用户权限，top将尽可能高的优先级运行</li>
+<li><code>-S</code>：使用累加模式</li>
+<li><code>-s</code>：使top在安全模式中运行，可以消除交互模式下的潜在危险</li>
+<li><code>-c</code>：显示整个命令行，而不是只显示命令名</li>
+<li><code>-help</code>：获取top的帮助</li>
+<li><code>k PID</code>：终止指定的进程</li>
+<li><code>q</code>：退出top</li>
+</ul>
+<p><strong>示例</strong><br><code>top</code>      //默认每5秒刷新一次</p>
+<h4 id="jop命令"><a href="#jop命令" class="headerlink" title="jop命令"></a>jop命令</h4><p><strong>功能：</strong>显示当前多有作业</p>
+<pre class=" language-bash"><code class="language-bash">格式： jop【选项】
+</code></pre>
+<ul>
+<li><code>-p</code>：金显示进程号</li>
+<li><code>-l</code>：同时显示进程号和作业</li>
+</ul>
+<h4 id="bg命令"><a href="#bg命令" class="headerlink" title="bg命令"></a>bg命令</h4><p>功能：将前台作业或进程切换到后台运行，若没有指定进程号，则将当前作业切换到后台</p>
+<pre class=" language-bash"><code class="language-bash">格式：bg【作业编号】
+</code></pre>
+<p>（此外，还可以使用Ctrl+Z组合键将前台程序转入后台停止运行；使用Ctrl+C组合键终止前台程序的运行）</p>
+<p><strong>示例1：</strong><br>//使用vi编辑file文件，用Ctrl+Z组合键挂起vi，再切换到后台<br><code>vi file
+ctrl+z
+bg l</code></p>
+<p><strong>示例2：</strong><br><code>bg</code>//将队首的作业调入后台运行<br><code>bg 3</code>  //将3号作业调入后台运行</p>
+<h4 id="fg命令"><a href="#fg命令" class="headerlink" title="fg命令"></a>fg命令</h4><p>功能：把后台的作业调入前台运行</p>
+<pre class=" language-bash"><code class="language-bash">格式：fg 【作业号】
+</code></pre>
+<p><strong>示例：</strong><br><code>fg</code> //对首的作业调入前台运行<br><code>fg 2</code>//将队列中的2号作业调入前台运行</p>
+<h4 id="kill命令"><a href="#kill命令" class="headerlink" title="kill命令"></a>kill命令</h4><p>功能：终止正在运行的进程或作业，超级用户可以终止所有进程，普通用户只能终止自己启动的进程</p>
+<pre class=" language-bash"><code class="language-bash">格式：  <span class="token function">kill</span> 【选项】 PID
+</code></pre>
+<ul>
+<li><code>-9</code>：示当无选项的命令不能终止进程时，可强制终止指定进程</li>
+</ul>
+<p><strong>示例：</strong><br><code>kill -9 3 8 5</code>//一次杀死3，8，5多个进程</p>
+<h4 id="killall命令"><a href="#killall命令" class="headerlink" title="killall命令"></a>killall命令</h4><p>功能：终止指定程序名的所有进程</p>
+<pre class=" language-bash"><code class="language-bash">格式：killall  -9  程序名
+</code></pre>
+<p><strong>示例：</strong><br><code>killall  -9  vsftpd</code>//杀死所有对应vsftpd程序的进程</p>
+<h4 id="nice命令"><a href="#nice命令" class="headerlink" title="nice命令"></a>nice命令</h4><p>功能：指定启动进程的优先级</p>
+<pre class=" language-bash"><code class="language-bash">格式：nice 【-优先级】命令
+</code></pre>
+<p><strong><code>示例：</code></strong></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">nice</span> -5 <span class="token function">ftp</span>       //启动ftp程序，其优先级为5
+</code></pre>
+<h4 id="date命令"><a href="#date命令" class="headerlink" title="date命令"></a>date命令</h4><p>功能：显示或设定系统日期、时间</p>
+<pre class=" language-bash"><code class="language-bash">格式：date 【MMDDhhmm<span class="token punctuation">[</span>CC<span class="token punctuation">]</span>YY<span class="token punctuation">[</span>.ss<span class="token punctuation">]</span>】
+</code></pre>
+<p><strong>示例：</strong><br> <code>date</code>  //显示日期和时间<br> <code>date  102310302008.30</code> //设置日期和时间</p>
+<h4 id="id命令"><a href="#id命令" class="headerlink" title="id命令"></a>id命令</h4><p>功能：显示当前用户的详细ID</p>
+<pre class=" language-bash"><code class="language-bash">格式：id 【参数】
+</code></pre>
+<ul>
+<li><code>-a</code>：显示所有ID信息</li>
+<li><code>-u</code>：显示UID</li>
+<li><code>-g</code>：显示用户所属组的GID</li>
+<li><code>-G</code>：显示用户附加组GID</li>
+</ul>
+<h3 id="二、进程调度"><a href="#二、进程调度" class="headerlink" title="二、进程调度"></a>二、进程调度</h3><h4 id="at调度"><a href="#at调度" class="headerlink" title="at调度"></a>at调度</h4><p>功能：安排系统在指定时间运行程序</p>
+<pre class=" language-bash"><code class="language-bash">格式：at 【参数】时间
+</code></pre>
+<ul>
+<li><code>-d</code>：删除指定的调度作业</li>
+<li><code>-m</code>：任务结束后会发送mail通知用户</li>
+<li><code>-f 文件名</code>：从指定文件中读取执行的命令</li>
+<li><code>-q 【a-z】</code>：指定使用的队列</li>
+<li><code>-l</code>：显示等待执行的调度作业</li>
+</ul>
+<p><strong>1.时间的绝对表示方法</strong><br>HH：MM  （24小时表示法）<br>HH：MM：AM（12小时表示法）<br><strong>2.时间的相对表示法</strong></p>
+<pre class=" language-bash"><code class="language-bash">Now+时间
+</code></pre>
+<p><strong>示例：</strong><br><code>now+n minutes</code>  // 从现在起向后n分钟<br><code>now+n days</code>// 从现在起向后n天<br><code>now+n hours</code>  // 从现在起向后n小时<br><code>now+n weeks</code> // 从现在起向后n周</p>
+<blockquote>
+<p>案例分析1：设置at调度，要求在2009年12月31日23时59分向登陆在系统上的所有用户发送”happy new year“信息：<br>at    23：59      12/31/2009<br>at&gt;who<br>at&gt;all happy new year!<br>at&gt;<eof>          //ctrl+d结束作业<br>job 1 at 2009-12-31 23:59</eof></p>
+</blockquote>
+<p><strong>显示at等待队列的作业信息</strong><br>atq</p>
+<p><strong>删除at等待队列中序号为1的作业</strong><br>atrm 1</p>
+<h4 id="batch调度"><a href="#batch调度" class="headerlink" title="batch调度"></a>batch调度</h4><p>功能：和at命令功能几乎相同，唯一区别是如果不指定运行时间，进程将在系统较短空闲时间运行</p>
+<pre class=" language-bash"><code class="language-bash">格式： batch 【选项】【时间】
+</code></pre>
+<h4 id="cron调度"><a href="#cron调度" class="headerlink" title="cron调度"></a>cron调度</h4><p>功能：安排作业让系统在指定时间周期运行<br><strong>原理：</strong>cron进程，每隔一分钟，检查/var/spool/cron目录下用户提交的作业文家中有无任务需要运行</p>
+<h4 id="crontab命令"><a href="#crontab命令" class="headerlink" title="crontab命令"></a>crontab命令</h4><p>功能：维护用户的crontab配置文件</p>
+<pre class=" language-bash"><code class="language-bash">格式：crontab 【参数】文件名
+</code></pre>
+<ul>
+<li><code>-u 用户名</code>：指定具体用户的cron文件</li>
+<li><code>-r</code>：删除用户的crontab文件</li>
+<li><code>-e</code>：创建并编辑crontab配置文件</li>
+<li><code>-l</code>：显示crontab配置文件内容</li>
+</ul>
+<h4 id="cron进程"><a href="#cron进程" class="headerlink" title="cron进程"></a>cron进程</h4><p>cron进程在系统启动时自起启动，并一直运行在后台，负责检测crontab配置文件，并按其设置内容，定期重复执行指定的cron调度工作</p>
+<blockquote>
+<p>案例：<br>要求root用户在每周二、四、六早上3点启动系统建立crontab文件<br>vi rootroot.cron   //以root用户登陆<br>格式：分 时 日 月 星期 要运行的程序<br>实例：0 3 <em> </em> 2，4，6    sbinshutdown -r now<br>运行crontab文件<br>crontab   /root / root.cron   //建立当前标准格式用户crontab文件<br>crontab命令提交的调度任务存放在/var/spool/cron目录中，并且以提交的用户名称命名，等待crond进程来调度执行。<br>通过/etc/at.deny和/etc/at.allow文件可以控制执行at命令的用户,at.deny存放禁止执行at命令用户名；at.allow存放允许执行at命令的用户名。</p>
+</blockquote>
+<p><strong>示例：</strong><br>禁止user1用户执行at命令安排调度任务<br><code>vi /tec /at.deny</code><br>然后向文件中添加user1，最后保存文件</p>
+<h2 id="外存管理"><a href="#外存管理" class="headerlink" title="外存管理"></a>外存管理</h2><p>Linux中无论是硬盘还是软盘都<strong>必须经过挂载</strong>才能进行文件存取操作。所谓挂载就是<br><strong>将存储介质内容映射到指定的目录中</strong>，此目录即为设备的挂载点。对介质的访问就是对挂载点目录的访问。一个挂载点一次只能挂载一个设备。</p>
+<h3 id="磁盘管理的shell命令"><a href="#磁盘管理的shell命令" class="headerlink" title="磁盘管理的shell命令"></a>磁盘管理的shell命令</h3><h4 id="free命令"><a href="#free命令" class="headerlink" title="free命令"></a>free命令</h4><p>功能：查看内存使用情况，包括虚拟内存、物理内存和缓冲区</p>
+<pre class=" language-bash"><code class="language-bash">free【参数】
+</code></pre>
+<ul>
+<li><code>-b</code>： 以字节为单位，默认选项</li>
+<li><code>-k</code>： 以KB为单位</li>
+<li><code>-m</code>：以MB为单位</li>
+</ul>
+<h4 id="du命令"><a href="#du命令" class="headerlink" title="du命令"></a>du命令</h4><p>功能：显示目录中文件的空间大小</p>
+<pre class=" language-bash"><code class="language-bash">du【参数】【路径名】
+</code></pre>
+<ul>
+<li><code>-m</code>：以MB为单位，统计文件的容量（默认KB）</li>
+</ul>
+<h4 id="df命令"><a href="#df命令" class="headerlink" title="df命令"></a>df命令</h4><p>功能：统计分区的使用情况</p>
+<pre class=" language-bash"><code class="language-bash">df【参数】【分区号/装载点】
+</code></pre>
+<ul>
+<li><code>-m</code>：以MB为单位，统计使用情况</li>
+</ul>
+<p><strong>示例：</strong><br><code>df</code>        显示当前所有已装载的分区使用情况<br><code>df /home</code>    显示/home分区使用情况</p>
+<h3 id="磁盘管理"><a href="#磁盘管理" class="headerlink" title="磁盘管理"></a>磁盘管理</h3><h4 id="Fdisk分区"><a href="#Fdisk分区" class="headerlink" title="Fdisk分区"></a>Fdisk分区</h4><pre class=" language-bash"><code class="language-bash">Fdisk -l         //查看机器所有挂u硬盘个数以及分区情况
+Fdisk /dev/sda   //进入设备/dev/sda
+</code></pre>
+<p>Command（m for help）：</p>
+<ul>
+<li><code>-m</code>：    帮助</li>
+<li><code>-d</code>：   删除一个分区</li>
+<li><code>-l</code>：   列出分区类型</li>
+<li><code>-n</code>：    添加一个分区</li>
+<li><code>-o</code>：     创建一个分区</li>
+<li><code>-p</code>：     ‘p’列出分区表</li>
+<li><code>-q</code>：   不保存退出</li>
+<li><code>-t</code>：    改变分区类型</li>
+<li><code>-w</code>：  把分区表写入硬盘并退出</li>
+<li><code>-x</code>：   扩展应用，专家功能</li>
+</ul>
+<h3 id="装载和卸载文件系统"><a href="#装载和卸载文件系统" class="headerlink" title="装载和卸载文件系统"></a>装载和卸载文件系统</h3><h4 id="1-手动命令装载"><a href="#1-手动命令装载" class="headerlink" title="1.手动命令装载"></a>1.手动命令装载</h4><p>功能：装载文件系统到指定的目录，该目录即为此设备的挂载点，挂载点目录可以不为空。但是必须已经存在。文件系统挂在后，该挂载点目录的原文件暂时不能显示且不能访问，取代它的是挂载设备上的文件。该目录上原文件待到挂载设备卸载后，才能重新访问。</p>
+<pre class=" language-bash"><code class="language-bash">mount【选项】【设备名】【装载点】
+</code></pre>
+<ul>
+<li><code>-t 文件系统类型(type)</code>：挂载指定文件系统类型</li>
+<li><code>-o ro</code>：只读方式</li>
+<li><code>-o rw</code>：读写方式</li>
+<li><code>-o iocharset=gb2312</code>：显示中文</li>
+</ul>
+<p><strong>示例：</strong><br><strong><code>1.查看已挂载的所有文件系统：mount</code></strong><br>Linux在启动时会自动挂载硬盘上的根分区，如果安装时建立多个分区，那么也可以查看多个分区的挂载情况。另外根据系统运行的需要，系统还自动挂载多个与存储设备无关的文件系统。<br><strong><code>2挂载光盘：</code></strong></p>
+<pre class=" language-bash"><code class="language-bash">Mkdir /mount/cdrom
+Mount -t ios9660  /dev/cdrom  /mount/cdrom
+Ls /mount/cdrom                              //显示光盘中的内容
+</code></pre>
+<p><strong><code>挂载U盘：</code></strong></p>
+<pre class=" language-bash"><code class="language-bash">Mkdir /mount/usb                      //创建目录
+Mount -t vfat /dev/sdal /mount/usb    //挂载U盘
+Ls /mount/usb                         //显示U盘中的内容
+</code></pre>
+<p>U盘设备在Linux上通常显示为SCSI设备，如/dev/sdal、/dev/sdbl等，如果u盘中的文件产生于windows环境，则可用‘-t vfat选项’。<br>通过mount可以查看挂载设备情况：</p>
+<pre class=" language-bash"><code class="language-bash">Mount  /dev/cdrom   /mnt/cdrom
+Mount -t ext3 /dev/hda5   /mnt/hard5
+Mount -o ro   /dev/hda6   /mnt/hard6
+</code></pre>
+<h4 id="2-自动装载"><a href="#2-自动装载" class="headerlink" title="2.自动装载"></a>2.自动装载</h4><p>功能：系统启动时自动装载文件系统</p>
+<pre class=" language-bash"><code class="language-bash"> <span class="token function">vi</span>  /etc/fstab
+</code></pre>
+<p><strong>Fstab文件结构：</strong></p>
+<pre class=" language-bash"><code class="language-bash">卷标       装载点   类型   装载选项    备份选项    检查顺序
+/dev/hda5  /abc   ext   defaults     0          1
+</code></pre>
+<ul>
+<li><code>卷标</code>：     系统分区的表示</li>
+<li><code>装载选项</code>：defaults表示默认启动时自动装载、noauto表示设定启动时不装载、rw表示读写方式装载、ro表示以只读方式装载、usrquota表示设定用户配额、grpquota表示设定组配额</li>
+<li><code>备份选项</code>：针对ext2，默认值为0，表示不备份</li>
+<li><code>检查顺序</code>：指fsck检查顺序，0表示不检查</li>
+</ul>
+<p><strong>示例：</strong><br>把/dev/hda5在系统启动时自动装载到目录/abc下，且备份选项为0，检查顺序为1：<br><code>Vi  /etc/fstab</code><br>添加如下内容：<br><code>/dev/hda5    /abc   ext2   defaults    0     1</code></p>
+<h4 id="卸载文件系统ument"><a href="#卸载文件系统ument" class="headerlink" title="卸载文件系统ument"></a>卸载文件系统ument</h4><p>功能：卸载指定的设备，即可使用设备名也可使用挂载目录名</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">umount</span> 【选项】【装载点】
+</code></pre>
+<ul>
+<li><code>-t</code>：文件系统类型：指定文件系统类型</li>
+</ul>
+<p><strong>列子：</strong><br><code>Umount  /mnt/cdrm</code>卸载光盘<br><code>Umount  /dev/sdbl</code>   卸载U盘</p>
+<h4 id="检测文件系统fsck"><a href="#检测文件系统fsck" class="headerlink" title="检测文件系统fsck"></a>检测文件系统fsck</h4><p>功能：检测并修复文件系统</p>
+<pre class=" language-bash"><code class="language-bash">fsck【设备文件名】
+</code></pre>
+<ul>
+<li><code>-p</code>：自动修复检测道德错误</li>
+</ul>
+<p><strong>示例：</strong><br><code>Fsck -p  /dev/hda5</code> //检查硬盘某一分区上的文件系统</p>
+<h4 id="Df命令"><a href="#Df命令" class="headerlink" title="Df命令"></a>Df命令</h4><p>功能：显示文件系统的相关信息</p>
+<pre class=" language-bash"><code class="language-bash">df【选项】
+</code></pre>
+<ul>
+<li><code>-a</code>：显示全部文件系统的使用情况</li>
+<li><code>-t</code>:   文件系统类型：显示全部文件系统的使用情况</li>
+<li><code>-x</code>:  文件系统类型：仅显示指定文件系统</li>
+<li><code>-h</code>: 文件系统：显示除指定文件系统以外的其他文件系统的使用情况</li>
+</ul>
+<h4 id="Mkfs命令"><a href="#Mkfs命令" class="headerlink" title="Mkfs命令"></a>Mkfs命令</h4><p>功能：在磁盘文件系统上建立文件系统，也就是进行磁盘格式化</p>
+<pre class=" language-bash"><code class="language-bash">mkfs【选项】 设备
+</code></pre>
+<ul>
+<li><code>-t</code>:   文件系统类型：建立指定的问价系统，默认值为ext2</li>
+<li><code>-c</code>：建立文件系统前首先检查磁盘坏块</li>
+</ul>
+<p><strong>例如：</strong><br>将软盘格式化为ext2格式：<br><code>mkfs dev/fd0</code></p>
+<h3 id="磁盘配额概述"><a href="#磁盘配额概述" class="headerlink" title="磁盘配额概述"></a>磁盘配额概述</h3><p><strong>文件系统配额是一种磁盘空间的管理机制。使用文件系统配额可限制用户或组群在某个特定文件系统中所能使用的最大空间</strong>.配额管理文件保存于实施配额管理的那个文件系统的挂载目录中，其中aquota.user文件保存用户及配额的内容，而aquota.group文件保留组群级配额的内容。其中有分硬配额和软配额<br><strong>应配额</strong>：是用户和群组可使用空间的最大值。不可超出<br><strong>软配额</strong>：也定义用户和群组使用空间，但它在一段时间被超过后，会有7天的过渡期，此期间可以不断超过使用。</p>
+<h4 id="设置文件系统配额"><a href="#设置文件系统配额" class="headerlink" title="设置文件系统配额"></a>设置文件系统配额</h4><p>超级用户必须首先编辑/etc /fstab文件，指定实施配额管理文件系统以及实施何种配额管理，其次应执行quotacheck命令检查进行配额管理的文件系统并创建配额管理文件，然后利用edquota命令编辑配额管理文件，最后启动配额管理即可。</p>
+<h4 id="quotacheck命令"><a href="#quotacheck命令" class="headerlink" title="quotacheck命令"></a>quotacheck命令</h4><p>功能：检查文件系统的配额限制，并可创建配额管理文件</p>
+<pre class=" language-bash"><code class="language-bash">格式：quotacheck【选项】
+</code></pre>
+<ul>
+<li><code>-a(all)</code>：        检查/etc/fstab文件中需要进行配额管理的分区</li>
+<li><code>-g(group)</code>：  检查文件系统中文件和目录的数目，并可创建quota.group文件</li>
+<li><code>-u(user)</code>：     检查文件中文件和目录的数目，并可创建quota.user文件</li>
+<li><code>-v(verbose)</code>：显示命令的执行过程</li>
+</ul>
+<h4 id="edquota命令"><a href="#edquota命令" class="headerlink" title="edquota命令"></a>edquota命令</h4><p>功能：编辑配额管理文件</p>
+<pre class=" language-bash"><code class="language-bash">edquota【选项】
+</code></pre>
+<ul>
+<li><code>-用户名</code>：设定指定用户的配额</li>
+<li><code>-g(group)组群名</code>：设定指定群组的配额</li>
+<li><code>-p 用户名1 用户名2</code>：将用户1的配额设置复制给用户2</li>
+</ul>
+<h4 id="quotaon命令"><a href="#quotaon命令" class="headerlink" title="quotaon命令"></a>quotaon命令</h4><p>功能：启动配额管理，其主要选项与quotacheck命令相同</p>
+<pre class=" language-bash"><code class="language-bash">quotaon【选项】
+</code></pre>
+<h4 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h4><p><strong>1.检查quota软件包是否安装</strong><br><code>rpm -q quota</code><br><strong>2.如果未安装先安装</strong><br><code>mount  /mnt /cdrom</code><br><code>cd /mnt /cdrom /RedHat/RPMS</code><br><code>rpm -ivh quota.....</code><br><strong>相关文件：</strong><br><code>/sbin /quotacheck</code> 生成配额文件<br><code>/sbin/quotaon</code>    启动磁盘配额<br><code>/sbin /quotaoff</code>关闭磁盘配额<br><code>/user /sbin /edquota</code> 设定用户/组配额<br><code>/user /bin /quota</code>   显示用户/组的配额信息</p>
+<p><strong>3.修改fstab文件</strong><br>给相应的磁盘分区设定配额信息，即在安装选项中加入userquota或者grpquota参数<br>例如：<code>/dev /hda5    /abc     ext2     defaults，userquota  0  1</code><br><strong>4.使fstab更改生效</strong><br>重新启动系统，使fstab更改生效</p>
+<p><strong>5.在实行配额限制的磁盘分区的挂载点下创建的配额信息文件</strong><br><code>cd  /abc</code><br><code>touch  aquota.user</code><br><code>touch  aquota.group</code></p>
+<p><strong>6.生成标准的配额信息文件</strong></p>
+<pre class=" language-bash"><code class="language-bash">quotacheck【参数】【挂载点】
+</code></pre>
+<ul>
+<li><code>-a</code>：所有实行配额文件的系统</li>
+<li><code>-u</code>：生成用户配额文件</li>
+<li><code>-g</code>：生成组群配额文件</li>
+<li><code>-v</code>；显示详细信息</li>
+</ul>
+<p><strong>示例：</strong>quotacheck   -uv    /abc</p>
+<p><strong>7.设定用户或组群的配额限制</strong></p>
+<pre class=" language-bash"><code class="language-bash">edquota【参数】【用户名/组群名】
+</code></pre>
+<ul>
+<li><code>-u</code>：设置用户的quota，这是预设的参数</li>
+<li><code>-g</code>：设置组群的quota</li>
+</ul>
+<p><strong>8.启动用户或群组配额限制</strong></p>
+<pre class=" language-bash"><code class="language-bash">quotaon 【参数】【挂载点】
+</code></pre>
+<ul>
+<li><code>-a</code>：所有实行配额的文件系统</li>
+<li><code>-u</code>：生成用户配额文件</li>
+<li><code>-g</code>：生成组群配额文件</li>
+<li><code>-v</code>：显示详细信息</li>
+</ul>
+<p><strong>9.其他相关命令</strong></p>
+<pre class=" language-bash"><code class="language-bash">quotaoff 【参数】【挂载点】   //关闭磁盘配额限制
+</code></pre>
+<p> cquotaoff  -uv  /home    //关闭磁盘配额限制，参数同quotaon</p>
+<pre class=" language-bash"><code class="language-bash">quota<span class="token operator">&lt;</span>用户名/-g  组名<span class="token operator">></span>
+</code></pre>
+<p>quota   u1    //显示U1用户的使用情况<br>Quota        //显示当前用户使用情况</p>
+<p><strong><code>案例分析1：对文件系统实施用户级的配额管理，普通用户tom的软配额为100MB，硬配额为150MB。</code></strong></p>
+<pre class=" language-bash"><code class="language-bash">1）使用文件编辑工具编辑/etc /fstab文件，对所在行进行修改，增加命令选项userquota。此时etc/fstab文件内容如下所是:
+Label           /              ext3  userquota    defaults         1  1
+Label<span class="token operator">=</span>/boot     /boot          ext3               defaults         1  2
+None            /dev /pts      devpts            gid<span class="token operator">=</span>5,mod<span class="token operator">=</span>620     0  0
+None            /proc          proc               defaults         0  0
+None            /dev /shm      tmpfs              defaults         0  0
+/dev /sda3      swap           swap               defaults         0  0
+/dev /cdrom     /mnt /cdrom    udf,iso9660    noauto,owner,kudzu   0  0
+/dev /cdrom     /mnt /floppy   auto           noauto,owner,kudzu   0  0
+
+2<span class="token punctuation">)</span>使用reboot命令重新启动系统文件，文件系统会根据修改的内容重新进行挂载
+
+3<span class="token punctuation">)</span>利用quotacheck命令创建aquota.user文件
+Quotacheck  -avn
+
+4）利用edquota命令编辑aquota.user文件，设置用户tom的配额
+Edquota  tom
+Disk quotas <span class="token keyword">for</span> user tom（uid 500）
+Filesytem                       blocks   soft   hard    inodes    soft   hard
+/dev /sda1                       100     0      0       11      0      0
+
+由此可知，实施配额管理的文件系统的逻辑卷名是/dev /sad1，tom用户已使用了100KB的磁盘空间，设置tom用户的软硬配额，默认单位为KB，如下，修改后保存：
+
+Filesytem                      blocks   soft     hard    inodes    soft   hard
+/dev /sda1                     100    102400  153600     11      0      0
+
+5）启动配额管理
+edquota  -avn
+/dev /sda1 <span class="token punctuation">[</span>/<span class="token punctuation">]</span>:user  quotas turned  on
+
+6<span class="token punctuation">)</span>测试用户配额
+把hda5分区挂载在/abc下，对该分区做磁盘配额
+Mount  /dev /hds5   /abc
+Vi  /etc /fstab
+Label           /              ext3           defaults              1  1
+Label<span class="token operator">=</span>/boot     /boot          ext3           defaults              1  2
+None            /dev /pts      devpts         gid<span class="token operator">=</span>5,mod<span class="token operator">=</span>620         0  0
+None            /proc          proc           defaults              0  0
+None            /dev /shm      tmpfs          defaults              0  0
+/dev /sda3      swap           swap           defaults              0  0
+/dev /cdrom     /mnt /cdrom    udf,iso9660    noauto,owner,kudzu    0  0
+/dev /cdrom     /mnt /floppy   auto           noauto,owner,kudzu    0  0
+/dev /hds5      /abc           ext3           defaults，userquota   1  2
+
+建立ah用户与xh用户
+Useradd  ah
+Useradd   xh
+
+设定ah用户在/abc下只允许使用的空间为5MB，使用的节点数为5.
+Disk quotas <span class="token keyword">for</span> user ah（uid 501）
+Filesytem                      blocks   soft     hard    inodes    soft   hard
+/dev /sda5                     100    512000     0      5      0      0
+
+设定xh用户在/abc下只允许使用的空间为10MB，使用的节点数为4
+Disk quotas <span class="token keyword">for</span> user ah（uid 501）
+Filesytem                      blocks   soft     hard    inodes    soft   hard
+/dev /sda5                     100    1024000     0      4      0      0
+
+分别用两个用户登陆，来进行测试
+Su ah；su  xh 以两个用户身份登陆，复制文件，测试磁盘空间的使用情况。
+</code></pre>
+<p><strong><code>案例分析2：对问价系统实施组群配额管理，staff组群的软配额是500MB，硬盘配额是600MB。</code></strong></p>
+<pre class=" language-bash"><code class="language-bash">1<span class="token punctuation">)</span>使用文件编辑工具编辑/etc /fstab文件，对所在行进行修改，增加命令选项groupquota。
+此时etc/fstab文件从内容如下所示：
+Label          /              ext3  userquota   defaults           1  1
+Label<span class="token operator">=</span>/boot    /boot          ext3              defaults           1  2
+None           /dev /pts      devpts            gid<span class="token operator">=</span>5,mod<span class="token operator">=</span>620      0  0
+None           /proc          proc              defaults           0  0
+None           /dev /shm      tmpfs             defaults           0  0
+/dev /sda3     swap           swap              defaults           0  0
+/dev /cdrom    /mnt /cdrom    udf,iso9660     noauto,owner,kudzu   0  0
+/dev /cdrom    /mnt /floppy   auto            noauto,owner,kudzu   0  0
+
+2）使用reboot命令重新启动系统，文件系统会根据修改的内容重新进行挂载。
+
+3）利用quotacheck命令创建aquota.group文件。此时查看目录可以发先系统已经新建组群级配置管理文件aquota.group
+
+4）利用edquota命令，为staff组群设置配额
+Edquota  -g  staff
+输入此命令后，系统进入vi编辑界面，编辑后部分内容如下:
+Disk quotas <span class="token keyword">for</span> user ah（uid 500）
+Filesytem                      blocks   soft       hard    inodes    soft   hard
+/dev /sda5                     100    512000     614400    11      0      0
+5）最后执行”quotaon  -avg”命令，启动组群级配置管理。Staff组群中所在用户在文件系统中可使用的空间总和最多为600MB。
+</code></pre>
+
+            </div>
+            <hr>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff;
+        background-color: #22AB38;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff;
+        background-color: #019FE8;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs">
+                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
+                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                    </ul>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#reward .reward-link').on('click', function () {
+            $('#rewardModal').openModal();
+        });
+
+        $('#rewardModal .close').on('click', function () {
+            $('#rewardModal').closeModal();
+        });
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone, qq, weibo, douban"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            <div class="reprint">
+                <p>
+                    <span class="reprint-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;Reprint please specify:
+                    </span>
+                    <a href="http://yoursite.com" class="b-link-green">热带猫</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/2019/01/31/Linux软件包和进程及外存管理/" class="b-link-green">Linux软件包和进程及外存管理</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '653cf55dc2376450315e',
+        clientSecret: 'a0afea09bca0e4372c3a3a56c249e60e47917535',
+        repo: 'hexored.github.io',
+        owner: 'mengyuan000',
+        admin: 'mengyuan000',
+		/*null,*/
+        id: '2019-01-31T10-40-40',
+        distractionFreeMode: false,  // Facebook-like distraction free mode
+		createIssueManually: true
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2019/01/31/Linux软件包和进程及外存管理/">
+                    <div class="card-image">
+                        
+                        <img src="/postImg/9-1.jpg" class="responsive-img" alt="Linux软件包和进程及外存管理">
+                        
+                        <span class="card-title">Linux软件包和进程及外存管理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">tar包管理创建tar文件tar 【主选项+辅助选项】 文件或目录
+
+主选项：
+
+-c：创建一个新的tar文件
+-r：在tar文件尾部追加文件
+-t：显示tar文件内容
+-u：更新tar文件
+-x：从tar文件中取出文件
+-delete：从</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                    Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux指令/" target="_blank">
+                        <span class="chip bg-color">Linux指令</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/01/30/如何高效的读一本书/">
+                    <div class="card-image">
+                        
+                        <img src="/postImg/8-1.jpg" class="responsive-img" alt="如何高效的读一本书">
+                        
+                        <span class="card-title">如何高效的读一本书</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">文/简书-萌薇
+问：“我读过很多书，但后来大部分都被我忘记了，那阅读的意义是什么？”
+答：“当我还是个孩子的时候，我吃过很多食物，现在已经记不起来吃过什么了。但可以肯定的是，它们中的一部分已经长成为我的骨头和肉。阅读对思想的改变也是如此！”</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/书/" target="_blank">
+                        <span class="chip bg-color">书</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://github.com/mengyuan000" target="_blank">Smy</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 采用
+            <a href="https://github.com/mengyuan000/hexored.github.io" target="_blank">Hexo-Red</a>的主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">32k</span>
+            
+
+            
+			
+                <br>
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span> 次,&nbsp;
+                </span>
+				<span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+			
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/mengyuan000" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="https://mail.qq.com" class="tooltipped" target="_blank" data-tooltip="321002645@qq.com" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="#!" class="tooltipped" data-tooltip="QQ联系我: 321002645" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
+
+<a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <i class="fa fa-rss"></i>
+</a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword" class="search-input" autofocus>
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/js/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

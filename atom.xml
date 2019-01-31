@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-30T05:11:25.108Z</updated>
+  <updated>2019-01-31T03:46:06.697Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux软件包和进程及外存管理</title>
+    <link href="http://yoursite.com/2019/01/31/Linux%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%92%8C%E8%BF%9B%E7%A8%8B%E5%8F%8A%E5%A4%96%E5%AD%98%E7%AE%A1%E7%90%86/"/>
+    <id>http://yoursite.com/2019/01/31/Linux软件包和进程及外存管理/</id>
+    <published>2019-01-31T02:40:40.532Z</published>
+    <updated>2019-01-31T03:46:06.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;tar包管理&quot;&gt;&lt;a href=&quot;#tar包管理&quot; class=&quot;headerlink&quot; title=&quot;tar包管理&quot;&gt;&lt;/a&gt;tar包管理&lt;/h2&gt;&lt;h3 id=&quot;创建tar文件&quot;&gt;&lt;a href=&quot;#创建tar文件&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux指令" scheme="http://yoursite.com/tags/Linux%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>如何高效的读一本书</title>
@@ -45,11 +71,11 @@
   </entry>
   
   <entry>
-    <title>Linux系统文件与目录基本操作指令</title>
-    <link href="http://yoursite.com/2019/01/29/Linux%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/"/>
-    <id>http://yoursite.com/2019/01/29/Linux系统文件与目录基本操作指令/</id>
+    <title>Linux目录文件基本操作与Vi指令和用户组管理</title>
+    <link href="http://yoursite.com/2019/01/29/Linux%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%8EVi%E6%8C%87%E4%BB%A4%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/"/>
+    <id>http://yoursite.com/2019/01/29/Linux目录文件基本操作与Vi指令和用户组管理/</id>
     <published>2019-01-29T04:08:55.075Z</published>
-    <updated>2019-01-29T04:57:18.674Z</updated>
+    <updated>2019-01-31T02:44:26.064Z</updated>
     
     <summary type="html">
     
