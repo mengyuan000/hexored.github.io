@@ -5,9 +5,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Gitalk评论配置, 热带猫">
-    <meta name="description" content="对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。
-配置文件Gitalk是一个Github上的一">
+    <meta name="keywords" content="一些技术问题的解法, 热带猫">
+    <meta name="description" content="计算机类Win10商店打不开解法不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。这种方法很简单粗暴，简直没有天理，直接上就行。
+1.用管理员打开powershell
+2.找出Windows Stor">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Gitalk评论配置 | 热带猫</title>
+    <title>一些技术问题的解法 | 热带猫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -274,13 +275,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/postImg/2-1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/postImg/12-1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Gitalk评论配置
+                        一些技术问题的解法
                     </div>
                 </div>
             </div>
@@ -393,8 +394,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Gitalk/" target="_blank">
-                                <span class="chip bg-color">Gitalk</span>
+                            <a href="/tags/工具/" target="_blank">
+                                <span class="chip bg-color">工具</span>
                             </a>
                         
                     </div>
@@ -405,8 +406,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Github/" class="post-category" target="_blank">
-                                Github
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                生活
                             </a>
                         
                     </div>
@@ -417,14 +418,14 @@
             <div class="post-info">
                 <span class="post-date">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-01-23
+                    2019-02-03
                 </span>
 
                 
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        384
+                        194
                     </span>
                     
 
@@ -447,10 +448,14 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。</p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>Gitalk是一个Github上的一个利用lssues作为评论的项目。这个是项目仓库的地址<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">https://github.com/gitalk/gitalk</a>.<br>下载两个文件gitalk.min.js和gitalk.css到自己的本地项目目录。<br>把下列代码复制到需要的地方<br><img src="/postImg/2-2.jpg"><br>上面也看到了有几个数据需要填，比较重要的有clientID和clientSecret，怎么得到这两个数据呢，我们需要新建application得到。</p>
-<h2 id="新建OAuth"><a href="#新建OAuth" class="headerlink" title="新建OAuth"></a>新建OAuth</h2><p>开始新建OAuth application：地址：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br><img src="/postImg/2-3.jpg"><br>完成后会出现clientID和clientSecret的串码，复制串码到上面对应的位置，还有就是repo是一个仓库名字，不需要完整路径。还有就是Gitalk是根据id来创建lssues,所以想要不同，id也要不一样，也可以填相对路径indow.location.pathname，完成后保存文件。<br>保存后进入首次进入页面后会出现使用Github登录，随后出现初始化lssues，点击一次即可，不然会创建多个lssues,随后刷新就完成了。<br><img src="/postImg/2-4.jpg"></p>
-<h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><h3 id="1、如果出现error：not-found：说明你的repo仓库名填写有问题"><a href="#1、如果出现error：not-found：说明你的repo仓库名填写有问题" class="headerlink" title="1、如果出现error：not found：说明你的repo仓库名填写有问题"></a>1、如果出现error：not found：说明你的repo仓库名填写有问题</h3><h3 id="2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超"><a href="#2、出现Error-Validation-Failed：具体原因是由于-Github-限制-labal-长度不能超" class="headerlink" title="2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超"></a>2、出现Error: Validation Failed：具体原因是由于 Github 限制 labal 长度不能超</h3>
+                <h2 id="计算机类"><a href="#计算机类" class="headerlink" title="计算机类"></a>计算机类</h2><h3 id="Win10商店打不开解法"><a href="#Win10商店打不开解法" class="headerlink" title="Win10商店打不开解法"></a>Win10商店打不开解法</h3><p><strong>不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。</strong><br>这种方法很简单粗暴，简直没有天理，直接上就行。</p>
+<p><strong>1.用管理员打开powershell</strong><br><img src="/postImg/12-1-a.jpg"></p>
+<p><strong>2.找出Windows Store 的包名</strong><br>  输入以下指令：<br>  <code>Get-AppxPackage -allusers | Select Name, PackageFullName</code><br>  点击回车机会出现下列的应用列表<br><img src="/postImg/12-1-b.jpg"></p>
+<p><strong>3.找到Microsoft.WindowsStore并把后面的完整名称复制下来</strong><br> <img src="/postImg/12-1-c.jpg"></p>
+<p><strong>4.把上一步复制下来的完整名称添加到后面代码：</strong><br><code>Add-AppxPackage -register “C:\Program Files\WindowsApps\（完整名称）\appxmanifest.xml” -DisableDevelopmentMode</code></p>
+<p><strong>5.然后回到powershell执行这段指令</strong></p>
+<p><strong>等待程序运行完毕，重启</strong><br><strong>搞定！</strong></p>
+
             </div>
             <hr>
 
@@ -590,7 +595,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">热带猫</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/23/Gitalk评论配置/" class="b-link-green">Gitalk评论配置</a>
+                    <a href="/2019/02/03/一些技术问题的解法/" class="b-link-green">一些技术问题的解法</a>
                 </p>
             </div>
         </div>
@@ -613,7 +618,7 @@
         owner: 'mengyuan000',
         admin: 'mengyuan000',
 		/*null,*/
-        id: '2019-01-23T18-49-40',
+        id: '2019-02-03T16-52-49',
         distractionFreeMode: false,  // Facebook-like distraction free mode
 		createIssueManually: true
     });
@@ -637,40 +642,43 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/01/24/hello-world/">
+                <a href="/2019/02/03/一些技术问题的解法/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/postImg/12-1.jpg" class="responsive-img" alt="一些技术问题的解法">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">一些技术问题的解法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Welcome to this! This is my very first post.Some information on the website:此网站是怎么搭建起来的
-此网站是再hexo主题框架的基础下，基于GitHub静态托管，我</div>
+                    <div class="summary">计算机类Win10商店打不开解法不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。这种方法很简单粗暴，简直没有天理，直接上就行。
+1.用管理员打开powershell
+2.找出Windows Stor</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category" target="_blank">
-                                    markdown
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/工具/" target="_blank">
+                        <span class="chip bg-color">工具</span>
                     </a>
                     
                 </div>
@@ -684,27 +692,26 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/01/21/hexo_github搭建网站/">
+                <a href="/2019/02/02/一些好用的软件推荐/">
                     <div class="card-image">
                         
-                        <img src="/postImg/1-1.jpg" class="responsive-img" alt="Hexo+Github搭建网站">
+                        <img src="/postImg/11-1.jpg" class="responsive-img" alt="一些好用的软件推荐">
                         
-                        <span class="card-title">Hexo+Github搭建网站</span>
+                        <span class="card-title">一些好用的软件推荐</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">什么是Hexo?hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在Github和Heroku上，Hexo也是github的开源项目
-搭建步骤：1、获得域名而且Github托管网站，完全不需要备案</div>
+                    <div class="summary">编程类基于C/C++的Visual Studio IDE适用于Windows和Mac的Visual Studio IDE ，功能非常强大，开发适用于Android。ios、Mac、Windows、Wed和云的应用，Visual Studio</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-21
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/前端/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
                                 </a>
                             
                             
@@ -714,16 +721,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node-js/" target="_blank">
-                        <span class="chip bg-color">node.js</span>
-                    </a>
-                    
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/" target="_blank">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/工具/" target="_blank">
+                        <span class="chip bg-color">工具</span>
                     </a>
                     
                 </div>
