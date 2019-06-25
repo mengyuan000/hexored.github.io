@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>On Time</title>
-      <link href="/2019/02/08/%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/"/>
-      <url>/2019/02/08/%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/</url>
-      
-        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28457573&auto=1&height=66"></iframe><h3 id=""><a href="#" class="headerlink" title="~"></a>~</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> markdown </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>一些技术问题的解法</title>
       <link href="/2019/02/03/%E4%B8%80%E4%BA%9B%E6%8A%80%E6%9C%AF%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E6%B3%95/"/>
       <url>/2019/02/03/%E4%B8%80%E4%BA%9B%E6%8A%80%E6%9C%AF%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E6%B3%95/</url>
@@ -258,19 +233,21 @@
       <link href="/2019/01/24/hello-world/"/>
       <url>/2019/01/24/hello-world/</url>
       
-        <content type="html"><![CDATA[<h3 id="Welcome-to-this-This-is-my-very-first-post"><a href="#Welcome-to-this-This-is-my-very-first-post" class="headerlink" title="Welcome to this! This is my very first post."></a>Welcome to this! This is my very first post.</h3><h4 id="Some-information-on-the-website"><a href="#Some-information-on-the-website" class="headerlink" title="Some information on the website:"></a>Some information on the website:</h4><p>此网站是怎么搭建起来的</p><pre class=" language-bash"><code class="language-bash">此网站是再hexo主题框架的基础下，基于GitHub静态托管，我给他起名叫：Hello-World</code></pre><p>此网站的作用是什么</p><pre class=" language-bash"><code class="language-bash">目的是为了记录一些知识</code></pre><p>主要知识方向是什么</p><pre class=" language-bash"><code class="language-bash">以计算机、编程为主，今后会主要方向会向着Machine learning</code></pre><p>他会一直存在吗？</p><pre class=" language-bash"><code class="language-bash">会的！我给这个域名给他赋予了特殊的意义，它的法语谐音是热带猫，之前为了赠与某人，也正如我爱她一样。</code></pre>]]></content>
+        <content type="html"><![CDATA[<h2 id="Welcome-to-here"><a href="#Welcome-to-here" class="headerlink" title="Welcome to here!"></a>Welcome to here!</h2><h4 id="This-is-my-first-article-Some-information-about-website"><a href="#This-is-my-first-article-Some-information-about-website" class="headerlink" title="This is my first article. Some information about website:"></a>This is my first article. Some information about website:</h4><p>1、How was it made? (它是怎么来的？)</p><pre class=" language-bash"><code class="language-bash">大约在2016年的夏天，我第一次接触到了C语言，此后就对这种神奇的事物产生了好奇，之后我开始对网络上各种美丽的网页感兴趣，随后我就购买了这个域名并借用了别人的样式，做出了第一个博客，现在这个也是借用了别人的架构，不得不说这架构的原主人很棒。</code></pre><p>2、Why did you make it? (要它做什么？)</p><pre class=" language-bash"><code class="language-bash">一方面可以当做业余兴趣，还可以提高编程能力。一方面可以用它来记录我的生活和一些知识，这是不是很酷？我并不是计算机专业的，所以这里不会有很多与代码相关的文章，对了，我还对人工智能感兴趣。</code></pre><p>3、Waht would you do for that? (你将怎么作?)</p><pre class=" language-bash"><code class="language-bash">我不会时刻的挂念它，我有我的生活，我并不是计算机专业，这项技术对我来说并不会帮助我什么，我在我的工作之余，兴趣之余，会时不时的记录一些我的所见所学，记录我的成长。当然，也有可能我会把它忘记很长一段时间。但是，只要我学会了新的技能，我一定会再记起它来。</code></pre><p>4、Will it always exist? (他会一直存在吗？)</p><pre class=" language-bash"><code class="language-bash">会的！我会一直记住我的初心。</code></pre>]]></content>
       
       
       <categories>
           
-          <category> markdown </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Typora </tag>
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -320,11 +297,11 @@
       
         <tags>
             
+            <tag> Github </tag>
+            
             <tag> node.js </tag>
             
             <tag> hexo </tag>
-            
-            <tag> Github </tag>
             
         </tags>
       
