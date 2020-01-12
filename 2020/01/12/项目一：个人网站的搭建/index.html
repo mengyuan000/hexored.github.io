@@ -5,10 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="一些技术问题的解法, Tropical Cat">
-    <meta name="description" content="计算机类Win10商店打不开解法不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。这种方法很简单粗暴，简直没有天理，直接上就行。
-1.用管理员打开powershell
-2.找出Windows Stor">
+    <meta name="keywords" content="项目一：个人网站的搭建, Tropical Cat">
+    <meta name="description" content="项目目标完成一个自己的个人网站的创建，及可通过域名随时随地可访问的一个个人网站。
+项目流程1、了解hexo和github在整个项目的实行中，始终离不开这两个内容。git是一个开源的分布式版本控制系统，可以对项目进行管理。早期是linux之父">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>一些技术问题的解法 | Tropical Cat</title>
+    <title>项目一：个人网站的搭建 | Tropical Cat</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -275,13 +274,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/postImg/12-1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/postImg/13-1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        一些技术问题的解法
+                        项目一：个人网站的搭建
                     </div>
                 </div>
             </div>
@@ -394,8 +393,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/工具/" target="_blank">
-                                <span class="chip bg-color">工具</span>
+                            <a href="/tags/项目/" target="_blank">
+                                <span class="chip bg-color">项目</span>
                             </a>
                         
                     </div>
@@ -406,8 +405,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/生活/" class="post-category" target="_blank">
-                                生活
+                            <a href="/categories/hexo/" class="post-category" target="_blank">
+                                hexo
                             </a>
                         
                     </div>
@@ -418,21 +417,21 @@
             <div class="post-info">
                 <span class="post-date">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-02-03
+                    2020-01-12
                 </span>
 
                 
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        194
+                        832
                     </span>
                     
 
                     
                     <span class="post-word-count">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </span>
                     
                 
@@ -448,14 +447,91 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="计算机类"><a href="#计算机类" class="headerlink" title="计算机类"></a>计算机类</h2><h3 id="Win10商店打不开解法"><a href="#Win10商店打不开解法" class="headerlink" title="Win10商店打不开解法"></a>Win10商店打不开解法</h3><p><strong>不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。</strong><br>这种方法很简单粗暴，简直没有天理，直接上就行。</p>
-<p><strong>1.用管理员打开powershell</strong><br><img src="/postImg/12-1-a.jpg"></p>
-<p><strong>2.找出Windows Store 的包名</strong><br>  输入以下指令：<br>  <code>Get-AppxPackage -allusers | Select Name, PackageFullName</code><br>  点击回车机会出现下列的应用列表<br><img src="/postImg/12-1-b.jpg"></p>
-<p><strong>3.找到Microsoft.WindowsStore并把后面的完整名称复制下来</strong><br> <img src="/postImg/12-1-c.jpg"></p>
-<p><strong>4.把上一步复制下来的完整名称添加到后面代码：</strong><br><code>Add-AppxPackage -register “C:\Program Files\WindowsApps\（完整名称）\appxmanifest.xml” -DisableDevelopmentMode</code></p>
-<p><strong>5.然后回到powershell执行这段指令</strong></p>
-<p><strong>等待程序运行完毕，重启</strong><br><strong>搞定！</strong></p>
+                <h2 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h2><p>完成一个自己的个人网站的创建，及可通过域名随时随地可访问的一个个人网站。</p>
+<h2 id="项目流程"><a href="#项目流程" class="headerlink" title="项目流程"></a>项目流程</h2><p>1、了解hexo和github<br>在整个项目的实行中，始终离不开这两个内容。<br>git是一个开源的分布式版本控制系统，可以对项目进行管理。早期是linux之父用来管理linux系统源代码的工具<br>hexo是一个快速、简洁且高效的博客架构，采用Node.js所带来超快的生成速度，可以让几百个页面在几秒内瞬间完成渲染。支持Markdown甚至整合Octopress的大部分插件。一键部署、强大的扩展性。它最初也是GitHub中的一个项目。</p>
+<p>2、构建基本的架构<br>下载hexo框架、下载git、下载node.js并完成运行调试。创建github账号并创建管理仓库。到此基本架构及工具已经完成。</p>
+<p>3、完成代码的本地部署<br>利用git运行控制台下载基础网站样式架构，完成基本的hexo本地样式文件部署github之前的配置工作，并完成后部署和本地浏览。完成之后可以在本地浏览器查看网站的基本样式。</p>
+<p>4、完成域名解析<br>购买一个合格的域名，完成解析工作，并设置好github的对接工作。再次启动部署，利用域名访问网站。</p>
+<p>5、了解HTML和css及js<br>最后在原有的框架下，做出自己的网站风格及样式</p>
+<h2 id="项目结果"><a href="#项目结果" class="headerlink" title="项目结果"></a>项目结果</h2><p>完成了一个随时随地可通过域名访问的个人网站，并含有评论系统插件，可播放固定音乐和视频。</p>
+<h2 id="项目收获"><a href="#项目收获" class="headerlink" title="项目收获"></a>项目收获</h2><p>文章目录：<br> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="整个搭建基本精确流程步骤" href="https://www.redaimao.cn/2019/01/21/hexo_github搭建网站" target="_blank">hexo+github搭建网站</a><br> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="整个搭建基本精确流程步骤" href="https://www.redaimao.cn/2019/01/23/Gitalk评论配置/" target="_blank">Gitalk评论配置</a><br> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="整个搭建基本精确流程步骤" href="https://www.redaimao.cn/2019/01/08/Html基础语法/" target="_blank">Html基础语法</a></p>
+<style type="text/css">
+    /* don't remove. */
+    .content{
+    margin: 20px 0 0 0;
+    }
+    .about-cover {
+        height: 75vh;
+    }
+    .theme{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+    .theme text{
+        font-size: 26px; 
+    }
+    .headline{
+        width: 90%;
+        overflow: auto;
+        height: auto;
+        margin: 0 0 0 35px;
+        text-align: left;
+    }
+    .headline text{        
+        font-size: 16px;
+        font-family: "等线 light"    
+    }
+    .one_link1{
+        width: auto;
+        height: 30px;
+        margin: 5px 10px 5px 10px;
+        border: 2px solid #DDEFF4;
+        border-radius: 5px;
+        line-height: 25px;
+        text-align: center;
+        color: #000;
+        background: #DDEFF4;
+        font-size: 18px;
+        box-shadow: 1px 2px 5px #888888;
+    }
 
+</style>
+
+<script type="text/javascript">
+
+    function afterBorder(x){
+         x.style.border="5px solid #A43749";
+         x.style.color="#fff";
+         x.style.background="#A43749";    
+    }
+
+    function beforeBorder1(x){
+         x.style.border="2px solid #DDEFF4";
+         x.style.color="#000";
+         x.style.background="#DDEFF4";
+    }
+    function beforeBorder2(x){
+         x.style.border="2px solid #F4DDE2";
+         x.style.color="#000";
+         x.style.background="#F4DDE2";
+    }
+    function beforeBorder3(x){
+         x.style.border="2px solid #F1EED5";
+         x.style.color="#000";
+         x.style.background="#F1EED5";
+    }
+    function beforeBorder4(x){
+         x.style.border="2px solid #D1F0E2";
+         x.style.color="#000";
+         x.style.background="#D1F0E2";
+    }
+
+</script>
+
+
+
+<main class="content"><br>    <div id="aboutme" class="container about-container"><br>        <div class="card"><br>            <div class="card-content"><br>                <div class="row"><br><br>                      <div class="theme"> <text>项目总结</text> </div><br><br>                      <div class="headline"><br>                          <text><br>                            回顾网站项目的流程与工作，此项目从最初的二零一六年开始到现在已有三年多的时间，期间此网站的搁浅时间最长的有一年，实际上心整理有三次，这是时隔第二次一年后的第四次。经过这几次的整理，我从中学到了许多知识，特别是对前端开发的了解，但不足的也有很多，特别是对这些知识的深入理解与记忆，整体看来还需要对这些知识进行系统的掌握几次，除此之外，做这些自己的项目也提高了自己的动手能力以及学习能力，希望我会在此领域越来越强！<br>                          </text><br><br>                      </div><br>                </div><br>            </div><br>        </div><br>    </div><br><br></main>
             </div>
             <hr>
 
@@ -595,7 +671,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">Tropical Cat</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/03/一些技术问题的解法/" class="b-link-green">一些技术问题的解法</a>
+                    <a href="/2020/01/12/项目一：个人网站的搭建/" class="b-link-green">项目一：个人网站的搭建</a>
                 </p>
             </div>
         </div>
@@ -618,7 +694,7 @@
         owner: 'mengyuan000',
         admin: 'mengyuan000',
 		/*null,*/
-        id: '2019-02-03T16-52-49',
+        id: '2020-01-12T14-59-15',
         distractionFreeMode: false,  // Facebook-like distraction free mode
 		createIssueManually: true
     });
@@ -642,7 +718,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/01/12/项目一：个人网站的搭建/">
                     <div class="card-image">
@@ -656,9 +733,9 @@
                     <div class="summary">项目目标完成一个自己的个人网站的创建，及可通过域名随时随地可访问的一个个人网站。
 项目流程1、了解hexo和github在整个项目的实行中，始终离不开这两个内容。git是一个开源的分布式版本控制系统，可以对项目进行管理。早期是linux之父</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -671,6 +748,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -689,19 +767,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/02/02/一些好用的软件推荐/">
+                <a href="/2019/02/03/一些技术问题的解法/">
                     <div class="card-image">
                         
-                        <img src="/postImg/11-1.jpg" class="responsive-img" alt="一些好用的软件推荐">
+                        <img src="/postImg/12-1.jpg" class="responsive-img" alt="一些技术问题的解法">
                         
-                        <span class="card-title">一些好用的软件推荐</span>
+                        <span class="card-title">一些技术问题的解法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">编程类基于C/C++的Visual Studio IDE适用于Windows和Mac的Visual Studio IDE ，功能非常强大，开发适用于Android。ios、Mac、Windows、Wed和云的应用，Visual Studio</div>
+                    <div class="summary">计算机类Win10商店打不开解法不知道有没有小伙伴的电脑出现了自带商店打不开的问题，我有一个亲测有效的方法就是：重新安装。这种方法很简单粗暴，简直没有天理，直接上就行。
+1.用管理员打开powershell
+2.找出Windows Stor</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-03
                             </span>
                         <span class="publish-author">
                             
