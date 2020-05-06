@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-08T07:26:02.458Z</updated>
+  <updated>2020-05-06T12:46:08.118Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电路设计</title>
+    <link href="http://yoursite.com/2020/05/06/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://yoursite.com/2020/05/06/电路设计/</id>
+    <published>2020-05-06T08:11:56.160Z</published>
+    <updated>2020-05-06T12:46:08.118Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;电路制图软件AD19&quot;&gt;&lt;a href=&quot;#电路制图软件AD19&quot; class=&quot;headerlink&quot; title=&quot;电路制图软件AD19&quot;&gt;&lt;/a&gt;电路制图软件AD19&lt;/h2&gt;&lt;p&gt;对于此软件的下载，找一下，在此连接中有介绍：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="硬件" scheme="http://yoursite.com/categories/%E7%A1%AC%E4%BB%B6/"/>
+    
+    
+      <category term="电路" scheme="http://yoursite.com/tags/%E7%94%B5%E8%B7%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>项目三：树莓派开发板实现语音对话</title>
@@ -128,7 +154,7 @@
     <link href="http://yoursite.com/2019/02/02/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://yoursite.com/2019/02/02/一些好用的软件推荐/</id>
     <published>2019-02-02T04:34:49.062Z</published>
-    <updated>2019-06-25T14:13:58.136Z</updated>
+    <updated>2020-05-06T09:01:29.456Z</updated>
     
     <summary type="html">
     
@@ -136,7 +162,7 @@
       
         
         
-          &lt;h2 id=&quot;编程类&quot;&gt;&lt;a href=&quot;#编程类&quot; class=&quot;headerlink&quot; title=&quot;编程类&quot;&gt;&lt;/a&gt;编程类&lt;/h2&gt;&lt;h3 id=&quot;基于C-C-的Visual-Studio-IDE&quot;&gt;&lt;a
+          &lt;h2 id=&quot;软件设计类&quot;&gt;&lt;a href=&quot;#软件设计类&quot; class=&quot;headerlink&quot; title=&quot;软件设计类&quot;&gt;&lt;/a&gt;软件设计类&lt;/h2&gt;&lt;h3 id=&quot;基于C-C-的Visual-Studio-IDE&quot;&gt;&lt;a
         
       
     
@@ -412,11 +438,11 @@
       <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
       <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
     
   </entry>
   

@@ -5,9 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="项目三：树莓派开发板实现语音对话, Tropical Cat">
-    <meta name="description" content="项目目标利用树莓派开发板，调试出语音对话助手，能够进行对话
-项目流程1、了解树莓派开发板树莓派由注册于英国的慈善组织“Raspberry Pi 基金会”开发，Eben·Upton/埃·厄普顿为项目带头人。2012年3月，英国剑桥大学埃本·阿">
+    <meta name="keywords" content="电路设计, Tropical Cat">
+    <meta name="description" content="电路制图软件AD19对于此软件的下载，找一下，在此连接中有介绍：https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。
+PCB常用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>项目三：树莓派开发板实现语音对话 | Tropical Cat</title>
+    <title>电路设计 | Tropical Cat</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -274,13 +274,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/postImg/13-1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/postImg/14-1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        项目三：树莓派开发板实现语音对话
+                        电路设计
                     </div>
                 </div>
             </div>
@@ -393,8 +393,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/项目/" target="_blank">
-                                <span class="chip bg-color">项目</span>
+                            <a href="/tags/电路/" target="_blank">
+                                <span class="chip bg-color">电路</span>
                             </a>
                         
                     </div>
@@ -405,8 +405,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/人工智能/" class="post-category" target="_blank">
-                                人工智能
+                            <a href="/categories/硬件/" class="post-category" target="_blank">
+                                硬件
                             </a>
                         
                     </div>
@@ -417,21 +417,21 @@
             <div class="post-info">
                 <span class="post-date">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-25
+                    2020-05-06
                 </span>
 
                 
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        715
+                        380
                     </span>
                     
 
                     
                     <span class="post-word-count">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        1 分
                     </span>
                     
                 
@@ -447,107 +447,15 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h2><p>利用树莓派开发板，调试出语音对话助手，能够进行对话</p>
-<h2 id="项目流程"><a href="#项目流程" class="headerlink" title="项目流程"></a>项目流程</h2><p><strong>1、了解树莓派开发板</strong><br>树莓派由注册于英国的慈善组织“Raspberry Pi 基金会”开发，Eben·Upton/埃·厄普顿为项目带头人。2012年3月，英国剑桥大学埃本·阿普顿（Eben Epton）正式发售世界上最小的台式机，又称卡片式电脑，外形只有信用卡大小，却具有电脑的所有基本功能，这就是Raspberry Pi电脑板，中文译名”树莓派”。</p>
-<p><strong>2、开发环境搭建</strong><br>树莓派外壳、散热片、风扇的安装，并烧录系统。</p>
-<p><strong>3、了解Linux常用命令</strong><br>为了能实现模块的功能，必须学会使用Linux系统，了解Linux常用命令以及vim编辑器的使用</p>
-<p><strong>3、利用网站的教学视频进行配置</strong><br>树莓派有自己的专门网站，里面有每个模块的使用教学视频，利用视频跟着进行每一步骤的调试匹配工作。</p>
-<p><strong>4、通过linux系统完成实现功能</strong><br>通过Linux系统，运行程序，实现功能。</p>
-<h2 id="项目结果"><a href="#项目结果" class="headerlink" title="项目结果"></a>项目结果</h2><p>完成了语音对话功能！</p>
-<div class="MV"><br>    <video controls autoplay loop><br>      <source src="/mv/raspberry_pi.ogg" type="video/ogg"><br>      <source src="/mv/raspberry_pi.mp4" type="video/mp4"><br>      <source src="/mv/raspberry_pi.webm" type="video/webm"><br>      <object data="/mv/raspberry_pi.mp4" width="320" height="240"><br>        <embed width="320" height="240" src="/mv/raspberry_pi.swf"><br>      </object><br>    </video><br></div>
-
-<h2 id="项目参考书"><a href="#项目参考书" class="headerlink" title="项目参考书"></a>项目参考书</h2><p>《Linux操作系统案例教程》 </p>
-<h2 id="项目收获"><a href="#项目收获" class="headerlink" title="项目收获"></a>项目收获</h2><p> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="" href="https://www.redaimao.cn/2019/01/29/Linux%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E4%B8%8EVi%E6%8C%87%E4%BB%A4%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/" target="_blank">Linux目录文件基本操作与Vi指令和用户组管理</a><br> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="" href="https://www.redaimao.cn/2019/01/31/Linux%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%92%8C%E8%BF%9B%E7%A8%8B%E5%8F%8A%E5%A4%96%E5%AD%98%E7%AE%A1%E7%90%86/" target="_blank">Linux软件包和进程及外存管理</a><br> <a class="one_link1" onmouseover="afterBorder(this)" onmouseout="beforeBorder1(this)" title="" href="https://www.redaimao.cn/2019/02/01/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" target="_blank">网络基础</a></p>
-<style type="text/css">
-    /* don't remove. */
-    .content{
-    margin: 50px 0 0 0;
-    }
-    .about-cover {
-        height: 75vh;
-    }
-    .theme{
-        width: 100%;
-        height: 50px;
-        text-align: center;
-    }
-    .theme text{
-        font-size: 26px; 
-    }
-    .headline{
-        width: auto;
-        overflow: auto;
-        height: auto;
-        text-align: center;
-    }
-    .headline text{        
-        font-size: 16px;
-        color: #24586B;
-        font-family: "等线 light"    
-
-    }
-    .one_link1{
-        width: auto;
-        height: 30px;
-        border: 2px solid #DDEFF4;
-        border-radius: 5px;
-        line-height: 25px;
-        text-align: center;
-        color: #000;
-        background: #DDEFF4;
-        font-size: 18px;
-        box-shadow: 1px 2px 5px #888888;
-    }
-    .MV{
-        width: 100%; background: #000;
-        height: 0;
-        position:relative;
-        padding-bottom: 56.25%;
-    }
-    .MV video{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-</style>
-
-<script type="text/javascript">
-
-    function afterBorder(x){
-         x.style.border="5px solid #A43749";
-         x.style.color="#fff";
-         x.style.background="#A43749";    
-    }
-
-    function beforeBorder1(x){
-         x.style.border="2px solid #DDEFF4";
-         x.style.color="#000";
-         x.style.background="#DDEFF4";
-    }
-    function beforeBorder2(x){
-         x.style.border="2px solid #F4DDE2";
-         x.style.color="#000";
-         x.style.background="#F4DDE2";
-    }
-    function beforeBorder3(x){
-         x.style.border="2px solid #F1EED5";
-         x.style.color="#000";
-         x.style.background="#F1EED5";
-    }
-    function beforeBorder4(x){
-         x.style.border="2px solid #D1F0E2";
-         x.style.color="#000";
-         x.style.background="#D1F0E2";
-    }
-
-</script>
-
-
-
-<main class="content"><br>    <div id="aboutme" class="container about-container"><br>        <div class="card"><br>            <div class="card-content"><br>                <div class="row"><br><br>                      <div class="theme"> <text>项目总结</text> </div><br><br>                      <div class="headline"><br>                          <text><br>                            2018年是人工智能席卷中国的一年，“AI”一词沾满了各大技术论坛、科技新闻头条。我为了不与世界离得太远，我开始了对python语言的学习，一次我看到了树莓派的多功能开发板，竟然能搭建语音助手，我一时来了兴趣，此次实战项目，对我帮助不是太大，但让我了解了语音助手的原理，也都是利用现有的语音库，接入它的API接口，实现语音对话。我对科技技术感兴趣，希望我能拖着我这笨重的身体继续前进。<br>                          </text><br><br>                      </div><br>                </div><br>            </div><br>        </div><br>    </div><br><br></main>
+                <h2 id="电路制图软件AD19"><a href="#电路制图软件AD19" class="headerlink" title="电路制图软件AD19"></a>电路制图软件AD19</h2><p>对于此软件的下载，找一下，在此连接中有介绍：<a href="https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/" target="_blank" rel="noopener">https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/</a><br>对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。</p>
+<h2 id="PCB常用元器件名称"><a href="#PCB常用元器件名称" class="headerlink" title="PCB常用元器件名称"></a>PCB常用元器件名称</h2><p>电阻RES、电位计POT、变电阻RVAR、电容CAP、电感IND、二极管DIO、发光二极管LED、三极管NPN、结型场效应管JFET、场效应管MOS|MES、继电器PELAY、运放OPAMP、开关SW、数码管DPY、天线ANT、直流电源BAT、铃|钟BELL、整流桥BRIDEG、缓冲器BUFF、蜂鸣器BUZZ、插口CON、晶振CRY、并行插口DB、熔断器FUSE、电机MOT、晶闸管SCR、插头PLUG、插座SOCK、变压器TRANS、(稳压)齐纳二极管ZENER。</p>
+<h2 id="常用元器件的作用"><a href="#常用元器件的作用" class="headerlink" title="常用元器件的作用"></a>常用元器件的作用</h2><p>1、电阻：对电流有阻碍作用并造成能量消耗，它是线性元件，电阻两端电压与流过电流成正比。<br>   应用：分流、限流、分压、偏执、滤波和阻抗匹配。</p>
+<p>2、电容:衡量导体存储电荷能的物理量，隔直通交，通低阻高（对于交流信号的阻碍作用成为容抗）。<br>   作用：隔直流、旁路、耦合、滤波、补偿、充放电、储能。</p>
+<p>3、电感：通直隔交，通低阻高<br>   作用：滤波、震荡</p>
+<p>4、二极管<br>   作用：整流、发光</p>
+<p>5、三极管：电流控制元件<br>   作用：电流放大</p>
+<p>6、Mos管：利用输出电流控制输出电源</p>
+<h2 id="常用IC"><a href="#常用IC" class="headerlink" title="常用IC"></a>常用IC</h2>
             </div>
             <hr>
 
@@ -687,7 +595,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">Tropical Cat</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/01/25/项目三：树莓派开发板实现语音对话/" class="b-link-green">项目三：树莓派开发板实现语音对话</a>
+                    <a href="/2020/05/06/电路设计/" class="b-link-green">电路设计</a>
                 </p>
             </div>
         </div>
@@ -710,7 +618,7 @@
         owner: 'mengyuan000',
         admin: 'mengyuan000',
 		/*null,*/
-        id: '2020-01-25T11-56-23',
+        id: '2020-05-06T16-11-56',
         distractionFreeMode: false,  // Facebook-like distraction free mode
 		createIssueManually: true
     });
@@ -734,7 +642,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/05/06/电路设计/">
                     <div class="card-image">
@@ -748,9 +657,9 @@
                     <div class="summary">电路制图软件AD19对于此软件的下载，找一下，在此连接中有介绍：https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。
 PCB常用</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -763,6 +672,7 @@ PCB常用</div>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -781,27 +691,27 @@ PCB常用</div>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/13/项目二：微信小程序开发/">
+                <a href="/2020/01/25/项目三：树莓派开发板实现语音对话/">
                     <div class="card-image">
                         
-                        <img src="/postImg/13-1.jpg" class="responsive-img" alt="项目二：微信小程序开发">
+                        <img src="/postImg/13-1.jpg" class="responsive-img" alt="项目三：树莓派开发板实现语音对话">
                         
-                        <span class="card-title">项目二：微信小程序开发</span>
+                        <span class="card-title">项目三：树莓派开发板实现语音对话</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">项目目标完成一个可以用户登录访问使用的微信小程序
-项目流程1、了解微信小程序开发手册首先需要注册并登录微信开放平台，下载微信开发软件，完成工作环境的搭建。仔细阅读开发手册，（微信对于小程序的开发做了许多功夫，在开发手册里面包含了许多代码结构</div>
+                    <div class="summary">项目目标利用树莓派开发板，调试出语音对话助手，能够进行对话
+项目流程1、了解树莓派开发板树莓派由注册于英国的慈善组织“Raspberry Pi 基金会”开发，Eben·Upton/埃·厄普顿为项目带头人。2012年3月，英国剑桥大学埃本·阿</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-13
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-25
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Javascript/" class="post-category" target="_blank">
-                                    Javascript
+                            <a href="/categories/人工智能/" class="post-category" target="_blank">
+                                    人工智能
                                 </a>
                             
                             

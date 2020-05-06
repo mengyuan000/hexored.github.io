@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>电路设计</title>
+      <link href="/2020/05/06/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+      <url>/2020/05/06/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="电路制图软件AD19"><a href="#电路制图软件AD19" class="headerlink" title="电路制图软件AD19"></a>电路制图软件AD19</h2><p>对于此软件的下载，找一下，在此连接中有介绍：<a href="https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/" target="_blank" rel="noopener">https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/</a><br>对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。</p><h2 id="PCB常用元器件名称"><a href="#PCB常用元器件名称" class="headerlink" title="PCB常用元器件名称"></a>PCB常用元器件名称</h2><p>电阻RES、电位计POT、变电阻RVAR、电容CAP、电感IND、二极管DIO、发光二极管LED、三极管NPN、结型场效应管JFET、场效应管MOS|MES、继电器PELAY、运放OPAMP、开关SW、数码管DPY、天线ANT、直流电源BAT、铃|钟BELL、整流桥BRIDEG、缓冲器BUFF、蜂鸣器BUZZ、插口CON、晶振CRY、并行插口DB、熔断器FUSE、电机MOT、晶闸管SCR、插头PLUG、插座SOCK、变压器TRANS、(稳压)齐纳二极管ZENER。</p><h2 id="常用元器件的作用"><a href="#常用元器件的作用" class="headerlink" title="常用元器件的作用"></a>常用元器件的作用</h2><p>1、电阻：对电流有阻碍作用并造成能量消耗，它是线性元件，电阻两端电压与流过电流成正比。<br>   应用：分流、限流、分压、偏执、滤波和阻抗匹配。</p><p>2、电容:衡量导体存储电荷能的物理量，隔直通交，通低阻高（对于交流信号的阻碍作用成为容抗）。<br>   作用：隔直流、旁路、耦合、滤波、补偿、充放电、储能。</p><p>3、电感：通直隔交，通低阻高<br>   作用：滤波、震荡</p><p>4、二极管<br>   作用：整流、发光</p><p>5、三极管：电流控制元件<br>   作用：电流放大</p><p>6、Mos管：利用输出电流控制输出电源</p><h2 id="常用IC"><a href="#常用IC" class="headerlink" title="常用IC"></a>常用IC</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 硬件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>项目三：树莓派开发板实现语音对话</title>
       <link href="/2020/01/25/%E9%A1%B9%E7%9B%AE%E4%B8%89%EF%BC%9A%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AE%9E%E7%8E%B0%E8%AF%AD%E9%9F%B3%E5%AF%B9%E8%AF%9D/"/>
       <url>/2020/01/25/%E9%A1%B9%E7%9B%AE%E4%B8%89%EF%BC%9A%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AE%9E%E7%8E%B0%E8%AF%AD%E9%9F%B3%E5%AF%B9%E8%AF%9D/</url>
@@ -108,7 +133,7 @@
       <link href="/2019/02/02/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
       <url>/2019/02/02/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
       
-        <content type="html"><![CDATA[<h2 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h2><h3 id="基于C-C-的Visual-Studio-IDE"><a href="#基于C-C-的Visual-Studio-IDE" class="headerlink" title="基于C/C++的Visual Studio IDE"></a>基于C/C++的Visual Studio IDE</h3><p><img src="/postImg/11-1-a.jpg"><br>适用于Windows和Mac的Visual Studio IDE ，功能非常强大，<strong>开发适用于Android。ios、Mac、Windows、Wed和云的应用</strong>，Visual Studio 使你能够准确、高效地编写代码，并且不会丢失当前的文件上下文。通过代码的历史数据可跨语言快速查找并修复 bug，无论是在本地还是远程。使用全面的测试工具编写高质量代码，<strong>在任意提供商（包括 GitHub）托管的 Git 存储库中管理你的源代码。</strong>通过利用 Microsoft、合作伙伴和社区提供的工具、控件和模板，扩展 Visual Studio 功能。 </p><p><strong>注意</strong>:里面的组建比较多，安装内容也比较大，会有一部分组件会强制安装在C盘,C盘不够用的小伙伴要注意一下！</p><p><strong>安装步骤</strong><br>首先找到微软的官网，<a href="https://www.visualstudio.com/zh-hans/?rr=https%3A%2F%2Fwww.microsoft.com%2Fzh-cn%2F，下载需要的IDE产品" target="_blank" rel="noopener">https://www.visualstudio.com/zh-hans/?rr=https%3A%2F%2Fwww.microsoft.com%2Fzh-cn%2F，下载需要的IDE产品</a><br><img src="/postImg/11-1-b.jpg"><br>选择community这个安装系列工具集下载器，你所之后需要的扩展功能都可以在这里面安装<br><img src="/postImg/11-1-c.jpg"><br><img src="/postImg/11-1-d.jpg"><br>完成后就会出现下面页面，根据需要装载组建，对于C程序这一部分组件就够了，按照图勾选上<br><img src="/postImg/11-1-e.jpg"><br>下载完成之后我们就打开软件，测试一下，首先打开文件新建项目<br><img src="/postImg/11-1-f.jpg"><br>选择windows控制台，填写项目名称以及路径，文件名默认为C++文件.cpp，如果写的是C，文件名后面需要加.c，然后确定。<br><img src="/postImg/11-1-g.jpg"><br>然后就可以在打开的文件里面开始编写，<br><img src="/postImg/11-1-h.jpg"><br>然后调试编译<br><img src="/postImg/11-1-i.jpg"><br>最后查看是否出错<br><img src="/postImg/11-1-j.jpg"><br>测试后的错误列表和输出都可以再视图里面找到<br><img src="/postImg/11-1-k.jpg"></p><h3 id="VC-2010Express"><a href="#VC-2010Express" class="headerlink" title="VC++2010Express"></a>VC++2010Express</h3><p><img src="/postImg/11-2-a.jpg"><br>VC++2010Express是VS2010版本中的一个组件，使其编写C/C++的一个工具，一般不会用到，最近计算机二级C考试软件改成了VC++2010学习版，对于软件使用的熟练程度也影响着成绩，所以不妨下一个熟悉一下操作环境。<br><strong>百度云盘下载地址：链接: <a href="https://pan.baidu.com/s/1Eyio46MqICng357_PNIiCA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Eyio46MqICng357_PNIiCA</a> 密码: xy4u</strong></p><p><strong>安装：</strong><br>除了安装目录，一直点确定就可以了，软件是中文版的<br><strong>配置小操作：</strong><br>刚安装号后进入软件是没有编译按钮的需要自己添加，对于不熟悉的小伙伴不用担心浪费时间，我给你找好了方法</p><p><strong>首先快捷栏里面是没有我们熟悉的编译按钮的，这需要我们自己弄上去</strong><br>首先点击工具→自定义<br><img src="/postImg/11-2-b.jpg"></p><p>然后把生成打上勾，你就会发现软件面板上出现了编译按钮<br><img src="/postImg/11-2-c.jpg"></p><p>右击编译栏右边的小箭头→添加执行→自定义，因为我们编写的不是真正的项目，所以选择执行但不调试<br><img src="/postImg/11-2-d.jpg"><br><img src="/postImg/11-2-e.jpg"><br><img src="/postImg/11-2-f.jpg"></p><p>完成！之后在写完程序后就可以点击这个绿色的三角按钮进行执行操作。</p><h2 id="影视音乐类"><a href="#影视音乐类" class="headerlink" title="影视音乐类"></a>影视音乐类</h2><h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>网易去音乐可以说很好了，如果你喜欢英文歌，那你选它就是对的。</p><h3 id="FDM下载器"><a href="#FDM下载器" class="headerlink" title="FDM下载器"></a>FDM下载器</h3><p>FDM(Free Download Manager)是一款非常好用的轻量级下载器，相比于迅雷的免费版，这款下载器可以说是免费且没有广告，可以告别弹广告的恶心事情。<br>官网地址：<a href="https://www.freedownloadmanager.org/" target="_blank" rel="noopener">https://www.freedownloadmanager.org/</a><br>点击Free Download,安装时一直确认就行，记得自己换安装路径。<br>你只需要把下载的种子资源拖进去就可以实现下载，而且还不会像迅雷一样限速。<br><img src="/postImg/11-3-a.jpg"></p><h2 id="工具类"><a href="#工具类" class="headerlink" title="工具类"></a>工具类</h2><h3 id="Bandizip"><a href="#Bandizip" class="headerlink" title="Bandizip"></a>Bandizip</h3><p>Bandizip是一款解压软件，同样的我也是看中了它免费且无广告的优点。<br>官网地址：<a href="http://www.bandisoft.com/bandizip/" target="_blank" rel="noopener">http://www.bandisoft.com/bandizip/</a><br><img src="/postImg/11-3-b.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="软件设计类"><a href="#软件设计类" class="headerlink" title="软件设计类"></a>软件设计类</h2><h3 id="基于C-C-的Visual-Studio-IDE"><a href="#基于C-C-的Visual-Studio-IDE" class="headerlink" title="基于C/C++的Visual Studio IDE"></a>基于C/C++的Visual Studio IDE</h3><p><img src="/postImg/11-1-a.jpg"><br>适用于Windows和Mac的Visual Studio IDE ，功能非常强大，<strong>开发适用于Android。ios、Mac、Windows、Wed和云的应用</strong>，Visual Studio 使你能够准确、高效地编写代码，并且不会丢失当前的文件上下文。通过代码的历史数据可跨语言快速查找并修复 bug，无论是在本地还是远程。使用全面的测试工具编写高质量代码，<strong>在任意提供商（包括 GitHub）托管的 Git 存储库中管理你的源代码。</strong>通过利用 Microsoft、合作伙伴和社区提供的工具、控件和模板，扩展 Visual Studio 功能。 </p><p><strong>注意</strong>:里面的组建比较多，安装内容也比较大，会有一部分组件会强制安装在C盘,C盘不够用的小伙伴要注意一下！</p><p><strong>安装步骤</strong><br>首先找到微软的官网，<a href="https://www.visualstudio.com/zh-hans/?rr=https%3A%2F%2Fwww.microsoft.com%2Fzh-cn%2F，下载需要的IDE产品" target="_blank" rel="noopener">https://www.visualstudio.com/zh-hans/?rr=https%3A%2F%2Fwww.microsoft.com%2Fzh-cn%2F，下载需要的IDE产品</a><br><img src="/postImg/11-1-b.jpg"><br>选择community这个安装系列工具集下载器，你所之后需要的扩展功能都可以在这里面安装<br><img src="/postImg/11-1-c.jpg"><br><img src="/postImg/11-1-d.jpg"><br>完成后就会出现下面页面，根据需要装载组建，对于C程序这一部分组件就够了，按照图勾选上<br><img src="/postImg/11-1-e.jpg"><br>下载完成之后我们就打开软件，测试一下，首先打开文件新建项目<br><img src="/postImg/11-1-f.jpg"><br>选择windows控制台，填写项目名称以及路径，文件名默认为C++文件.cpp，如果写的是C，文件名后面需要加.c，然后确定。<br><img src="/postImg/11-1-g.jpg"><br>然后就可以在打开的文件里面开始编写，<br><img src="/postImg/11-1-h.jpg"><br>然后调试编译<br><img src="/postImg/11-1-i.jpg"><br>最后查看是否出错<br><img src="/postImg/11-1-j.jpg"><br>测试后的错误列表和输出都可以再视图里面找到<br><img src="/postImg/11-1-k.jpg"></p><h3 id="VC-2010Express"><a href="#VC-2010Express" class="headerlink" title="VC++2010Express"></a>VC++2010Express</h3><p><img src="/postImg/11-2-a.jpg"><br>VC++2010Express是VS2010版本中的一个组件，使其编写C/C++的一个工具，一般不会用到，最近计算机二级C考试软件改成了VC++2010学习版，对于软件使用的熟练程度也影响着成绩，所以不妨下一个熟悉一下操作环境。<br><strong>百度云盘下载地址：链接: <a href="https://pan.baidu.com/s/1Eyio46MqICng357_PNIiCA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Eyio46MqICng357_PNIiCA</a> 密码: xy4u</strong></p><p><strong>安装：</strong><br>除了安装目录，一直点确定就可以了，软件是中文版的<br><strong>配置小操作：</strong><br>刚安装号后进入软件是没有编译按钮的需要自己添加，对于不熟悉的小伙伴不用担心浪费时间，我给你找好了方法</p><p><strong>首先快捷栏里面是没有我们熟悉的编译按钮的，这需要我们自己弄上去</strong><br>首先点击工具→自定义<br><img src="/postImg/11-2-b.jpg"></p><p>然后把生成打上勾，你就会发现软件面板上出现了编译按钮<br><img src="/postImg/11-2-c.jpg"></p><p>右击编译栏右边的小箭头→添加执行→自定义，因为我们编写的不是真正的项目，所以选择执行但不调试<br><img src="/postImg/11-2-d.jpg"><br><img src="/postImg/11-2-e.jpg"><br><img src="/postImg/11-2-f.jpg"></p><p>完成！之后在写完程序后就可以点击这个绿色的三角按钮进行执行操作。</p><h2 id="硬件设计类"><a href="#硬件设计类" class="headerlink" title="硬件设计类"></a>硬件设计类</h2><h3 id="Altium-Designer-19-0"><a href="#Altium-Designer-19-0" class="headerlink" title="Altium Designer 19.0"></a>Altium Designer 19.0</h3><p>硬件电路设计必备工具之一，19版更是新界面优化。<br>百度云盘链接：<a href="https://pan.baidu.com/s/1NXwU_IN4bZa2WMhGE4_3Gg" target="_blank" rel="noopener">https://pan.baidu.com/s/1NXwU_IN4bZa2WMhGE4_3Gg</a>       提取码：ctas  （里面有完整的安装教程）<br><strong>安装步骤:</strong><br>1、如果装过dxp或AD请一定卸载完整后再装！！！<br>   ①C盘，Program Files (x86)文件夹中删除“Altium”文件夹；C盘，ProgramData文件夹（此文件夹是隐藏的）中删除“Altium”和“Altium2004”这两个文件夹；<br>   ②C盘- 用户- 用户名（系统用户名）- AppData - Local中删除“Altium”文件夹;<br>   ③C盘- 用户- 用户名（系统用户名）-AppData - Roaming中删除“Altium”文件夹；<br>   ④C盘- 用户- 公用- 公用文档中删除“Altium”文件夹。，把这些全部删除干净，再重新安装AD。<br>2、建议下载驱动精灵检查显卡驱动是否需要更新<br>3、安装步骤<a href="https://www.pcsoft.com.cn/soft/177290.html" target="_blank" rel="noopener">https://www.pcsoft.com.cn/soft/177290.html</a><br>4、安装后去删除一个AD默认安装的驱动软件，忘了叫啥了，一般都和AD在一块<br>5、第一次用管理员要去运行</p><h2 id="影视音乐类"><a href="#影视音乐类" class="headerlink" title="影视音乐类"></a>影视音乐类</h2><h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>网易去音乐可以说很好了，如果你喜欢英文歌，那你选它就是对的。</p><h3 id="FDM下载器"><a href="#FDM下载器" class="headerlink" title="FDM下载器"></a>FDM下载器</h3><p>FDM(Free Download Manager)是一款非常好用的轻量级下载器，相比于迅雷的免费版，这款下载器可以说是免费且没有广告，可以告别弹广告的恶心事情。<br>官网地址：<a href="https://www.freedownloadmanager.org/" target="_blank" rel="noopener">https://www.freedownloadmanager.org/</a><br>点击Free Download,安装时一直确认就行，记得自己换安装路径。<br>你只需要把下载的种子资源拖进去就可以实现下载，而且还不会像迅雷一样限速。<br><img src="/postImg/11-3-a.jpg"></p><h2 id="工具类"><a href="#工具类" class="headerlink" title="工具类"></a>工具类</h2><h3 id="Bandizip"><a href="#Bandizip" class="headerlink" title="Bandizip"></a>Bandizip</h3><p>Bandizip是一款解压软件，同样的我也是看中了它免费且无广告的优点。<br>官网地址：<a href="http://www.bandisoft.com/bandizip/" target="_blank" rel="noopener">http://www.bandisoft.com/bandizip/</a><br><img src="/postImg/11-3-b.jpg"></p>]]></content>
       
       
       <categories>
@@ -372,11 +397,11 @@
       
         <tags>
             
+            <tag> Github </tag>
+            
             <tag> node.js </tag>
             
             <tag> hexo </tag>
-            
-            <tag> Github </tag>
             
         </tags>
       
