@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-06T12:46:08.118Z</updated>
+  <updated>2020-05-24T14:42:56.886Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>电路设计</title>
+    <title>Python语言</title>
+    <link href="http://yoursite.com/2020/05/24/Python%E8%AF%AD%E8%A8%80/"/>
+    <id>http://yoursite.com/2020/05/24/Python语言/</id>
+    <published>2020-05-24T13:35:28.125Z</published>
+    <updated>2020-05-24T14:42:56.886Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数电</title>
+    <link href="http://yoursite.com/2020/05/24/%E6%95%B0%E7%94%B5/"/>
+    <id>http://yoursite.com/2020/05/24/数电/</id>
+    <published>2020-05-24T06:02:17.094Z</published>
+    <updated>2020-05-24T14:43:29.249Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="硬件" scheme="http://yoursite.com/categories/%E7%A1%AC%E4%BB%B6/"/>
+    
+    
+      <category term="电路" scheme="http://yoursite.com/tags/%E7%94%B5%E8%B7%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速入门电路设计</title>
     <link href="http://yoursite.com/2020/05/06/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
     <id>http://yoursite.com/2020/05/06/电路设计/</id>
     <published>2020-05-06T08:11:56.160Z</published>
-    <updated>2020-05-06T12:46:08.118Z</updated>
+    <updated>2020-09-27T06:46:27.000Z</updated>
     
     <summary type="html">
     
@@ -38,7 +74,7 @@
       <category term="硬件" scheme="http://yoursite.com/categories/%E7%A1%AC%E4%BB%B6/"/>
     
     
-      <category term="电路" scheme="http://yoursite.com/tags/%E7%94%B5%E8%B7%AF/"/>
+      <category term="电路设计基础" scheme="http://yoursite.com/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
@@ -286,7 +322,7 @@
     <link href="http://yoursite.com/2019/01/28/20%E4%B8%AA%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84JAVA%E7%A8%8B%E5%BA%8F%E7%89%87%E6%AE%B5/"/>
     <id>http://yoursite.com/2019/01/28/20个非常有用的JAVA程序片段/</id>
     <published>2019-01-28T05:01:27.506Z</published>
-    <updated>2019-06-25T14:13:29.310Z</updated>
+    <updated>2020-05-24T14:38:09.100Z</updated>
     
     <summary type="html">
     
@@ -301,7 +337,7 @@
     
     </summary>
     
-      <category term="后端" scheme="http://yoursite.com/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
     
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
@@ -339,7 +375,7 @@
     <link href="http://yoursite.com/2019/01/25/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/01/25/ES6的常用语法/</id>
     <published>2019-01-25T09:09:36.311Z</published>
-    <updated>2019-06-25T14:04:36.034Z</updated>
+    <updated>2020-05-24T14:38:12.240Z</updated>
     
     <summary type="html">
     
@@ -354,8 +390,10 @@
     
     </summary>
     
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
     
+    
+      <category term="Html" scheme="http://yoursite.com/tags/Html/"/>
     
       <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
     
@@ -421,7 +459,7 @@
     <link href="http://yoursite.com/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
     <id>http://yoursite.com/2019/01/21/hexo_github搭建网站/</id>
     <published>2019-01-21T07:00:20.836Z</published>
-    <updated>2019-06-25T14:08:23.912Z</updated>
+    <updated>2020-05-24T14:36:54.022Z</updated>
     
     <summary type="html">
     
@@ -435,7 +473,7 @@
     
     </summary>
     
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="软件框架" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E6%A1%86%E6%9E%B6/"/>
     
     
       <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
@@ -451,7 +489,7 @@
     <link href="http://yoursite.com/2019/01/08/Html%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/01/08/Html基础语法/</id>
     <published>2019-01-08T10:58:46.660Z</published>
-    <updated>2019-06-25T14:09:48.940Z</updated>
+    <updated>2020-05-24T14:36:56.908Z</updated>
     
     <summary type="html">
     
@@ -466,7 +504,7 @@
     
     </summary>
     
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
     
     
       <category term="Html" scheme="http://yoursite.com/tags/Html/"/>

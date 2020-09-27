@@ -5,7 +5,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="电路设计, Tropical Cat">
+    <meta name="keywords" content="快速入门电路设计, Tropical Cat">
     <meta name="description" content="电路制图软件AD19对于此软件的下载，找一下，在此连接中有介绍：https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。
 PCB常用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@ PCB常用">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>电路设计 | Tropical Cat</title>
+    <title>快速入门电路设计 | Tropical Cat</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -280,7 +280,7 @@ PCB常用">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        电路设计
+                        快速入门电路设计
                     </div>
                 </div>
             </div>
@@ -393,8 +393,8 @@ PCB常用">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/电路/" target="_blank">
-                                <span class="chip bg-color">电路</span>
+                            <a href="/tags/电路设计基础/" target="_blank">
+                                <span class="chip bg-color">电路设计基础</span>
                             </a>
                         
                     </div>
@@ -424,14 +424,14 @@ PCB常用">
                     
                     <span class="post-word-count">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        380
+                        3.3k
                     </span>
                     
 
                     
                     <span class="post-word-count">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        11 分
                     </span>
                     
                 
@@ -450,12 +450,79 @@ PCB常用">
                 <h2 id="电路制图软件AD19"><a href="#电路制图软件AD19" class="headerlink" title="电路制图软件AD19"></a>电路制图软件AD19</h2><p>对于此软件的下载，找一下，在此连接中有介绍：<a href="https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/" target="_blank" rel="noopener">https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/</a><br>对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。</p>
 <h2 id="PCB常用元器件名称"><a href="#PCB常用元器件名称" class="headerlink" title="PCB常用元器件名称"></a>PCB常用元器件名称</h2><p>电阻RES、电位计POT、变电阻RVAR、电容CAP、电感IND、二极管DIO、发光二极管LED、三极管NPN、结型场效应管JFET、场效应管MOS|MES、继电器PELAY、运放OPAMP、开关SW、数码管DPY、天线ANT、直流电源BAT、铃|钟BELL、整流桥BRIDEG、缓冲器BUFF、蜂鸣器BUZZ、插口CON、晶振CRY、并行插口DB、熔断器FUSE、电机MOT、晶闸管SCR、插头PLUG、插座SOCK、变压器TRANS、(稳压)齐纳二极管ZENER。</p>
 <h2 id="常用元器件的作用"><a href="#常用元器件的作用" class="headerlink" title="常用元器件的作用"></a>常用元器件的作用</h2><p>1、电阻：对电流有阻碍作用并造成能量消耗，它是线性元件，电阻两端电压与流过电流成正比。<br>   应用：分流、限流、分压、偏执、滤波和阻抗匹配。</p>
-<p>2、电容:衡量导体存储电荷能的物理量，隔直通交，通低阻高（对于交流信号的阻碍作用成为容抗）。<br>   作用：隔直流、旁路、耦合、滤波、补偿、充放电、储能。</p>
+<p>2、电容:衡量导体存储电荷能的物理量，隔直通交，通低阻高（对于交流信号的阻碍作用成为容抗）。<br>   作用：隔直流、旁路、耦合、滤波、补偿、充放电、储能。<br>   <strong><code>旁路：</code></strong>是对输入信号中的高频噪声作为滤除对象。<br>   <strong><code>去耦：</code></strong>是对输出信号中的干扰作为去除对象。</p>
 <p>3、电感：通直隔交，通低阻高<br>   作用：滤波、震荡</p>
 <p>4、二极管<br>   作用：整流、发光</p>
 <p>5、三极管：电流控制元件<br>   作用：电流放大</p>
 <p>6、Mos管：利用输出电流控制输出电源</p>
-<h2 id="常用IC"><a href="#常用IC" class="headerlink" title="常用IC"></a>常用IC</h2>
+<h2 id="电路案例分析"><a href="#电路案例分析" class="headerlink" title="电路案例分析"></a>电路案例分析</h2><h3 id="电源部分"><a href="#电源部分" class="headerlink" title="电源部分"></a>电源部分</h3><p>电源电路是电路的骨络，好与坏直接影响到电路的使用和寿命。</p>
+<h4 id="二极管电桥"><a href="#二极管电桥" class="headerlink" title="二极管电桥"></a>二极管电桥</h4><p><img src="/postImg/14-2.jpg"><br>图中由四个二极管组成的电桥整流电路，供电端口可随意接</p>
+<blockquote>
+<p><strong>1N4007（整流二极管）:</strong></p>
+<hr>
+<p>广泛应用于各种交流变直流的整流电路中。也用于桥式整流电路。1n4007利用二极管单向导电性，可以把方向交替变化的交流电变换成单一方向的脉冲直流电。<br><strong>较强的正向浪涌承受能力：30A</strong><br><strong>最大正向平均整流电流：1.0A</strong><br><strong>最高反向耐压：1000V</strong><br><strong>最大反向漏电流：5uA</strong><br><strong>最大反向峰值电流：30uA</strong><br><strong>正向压降：1.0V</strong></p>
+</blockquote>
+<h4 id="充电电路"><a href="#充电电路" class="headerlink" title="充电电路"></a>充电电路</h4><p><img src="/postImg/14-3.jpg"><br>图中VUSB为usb充电端，VBAT为3.7V电池，R15、R16、R17为限流电阻，C12、C14为滤波电容。</p>
+<blockquote>
+<p><strong>TP4065(线性锂电池充电器):</strong></p>
+<hr>
+<p>世界首创电池带正负极犯戒保护、数额u电源正负极犯戒保护的单芯片，兼容大小3mA-600mA可调充电电流，适合usb电源和适配器电源工作。<br>由于采用了内部PMOSFET架构和放反接，所以不需要外部检测电阻和隔离二极管，热反馈可对充电电路电流自动调节。充电电压分为4.35V和4.2V。<br><strong>输入电压（Vcc）：-6.5V~12V</strong><br><strong>BAT：-4.35V~8V</strong><br><strong>PROG：-0.3V~Vcc+0.3V</strong><br><strong>CHRG：-0.3V~10V</strong><br><strong><code>CHRG(P1)：</code></strong>漏极开路输出的充电状态指示端。当充电器向电池充电时，CHRG管脚被内部开关拉到低电平，表示充电正在进行，否则就是高阻状态。<br><strong><code>BAT(P3)：</code></strong>充电电流输出。该引脚向电池提供充电电流并将最终浮充电压调节在4.2V。改引脚的一个精准内部电阻分压器设定浮充电压，在停机模式中，该内部电阻分压器断开。<br><strong><code>Vcc(P4)：</code></strong>正输入电源电压。该引脚为充电器提供电。范围在4V~8V，并应通过至少一个10uF电容进行旁路。当Vcc降至BAT端电压的30mA以内，TP4065进入停机状态，从而使BAT短电流降至1uA以下。<br><strong><code>PROG(P5)：</code></strong>冲断电流设定、充电电流设定、充电电流监控和停机引脚。在该引脚与地之间连接一个精度为1%的电阻器R，可以设定充电电流。当在恒定电流模式下进行充电，引脚的电压被维持在1V。PROG还可以用来关断充电器。将设定电阻器与地断接，内部一个0.2uA电流将PROG拉高至高电平。当该引脚的电压达到2.7V的停机门限电压时，充电器进入停机模式，充电停止且输入电源电流降至65uA。重新将R与地相连将使充电器恢复正常操作状态。</p>
+</blockquote>
+<h4 id="掉电检测"><a href="#掉电检测" class="headerlink" title="掉电检测"></a>掉电检测</h4><p><img src="/postImg/14-4.jpg"></p>
+<h4 id="稳压电路"><a href="#稳压电路" class="headerlink" title="稳压电路"></a>稳压电路</h4><h5 id="MP2315"><a href="#MP2315" class="headerlink" title="MP2315"></a>MP2315</h5><p>品牌：MPS<br>封装：SOT23-8<br>MP2315是一个高频率同步整流降压开关型变换器内置内部功率MOSFET。可以实现3A连续输出。具有宽输输入电压范围（4.5V-24V）的输出电流具有良好的负载和线路调节。具有低静态电流，高效率同步模式操作。固定500kHz的开关频率，频率为200kHz-2MHz同步外部时钟。AAM省电模式，内部软启动，OCP保护，从0.8V输出可调。<br><img src="/postImg/14-5.jpg"><br><strong>引脚：</strong></p>
+<blockquote>
+<p><strong><code>1AAM：</code></strong>一个电阻从AAM引脚连接到地，以设置一个AAM电压力MP2315进入非同步模式时，负载很小。驱动器AAM引脚高(=VCC)将迫使MP2315进入CCM。<br><strong><code>2IN：</code></strong>电源电压。MP2315的工作范围为+4.5V到+24V输入轨道。需要一个电容来解耦输入轨。使用宽的PCB轨迹进行连接。<br><strong><code>3SW：</code></strong>开关输出。使用宽的PCB轨迹进行连接。<br><strong><code>4GND：</code></strong>参考电压接地。<br><strong><code>5BST：</code></strong>引导。一个电容和一个20Ω电阻连接在SW和BST引脚之间，需要形成一个浮动电源通过高侧开关驱动器。<br><strong><code>6EN：</code></strong>EN=1启用MP2315。外部时钟可应用于EN管脚，以改变开关频率。<br><strong><code>7VCC：</code></strong>偏见供应。采用0.1uF-0.22uF电容进行解耦。<br><strong><code>8FB：</code></strong>反馈。从输出到GND的一个外部电阻分压器，接在FB引脚上，设置输出电压。为了防止在短路故障情况下的电流限制跑了频率折叠式比较器降低振荡器频率时FB电压低于400mV。</p>
+</blockquote>
+<h5 id="7805"><a href="#7805" class="headerlink" title="7805"></a>7805</h5><p>7805三端稳压器，7805中的05就代表稳5V输出，如果是09那就是稳9V输出。器内部具有过压保护、过流保护、过热保护功能，这使得性能很稳定，能够实现1A以上的输出电流。使用时输入输出电压差不能太大，太大则转换效率急速降低，而且容易击穿损坏。最高输入电压不能超过35V；输出电流不能太大，1.5A是其极限值。大电流的输出，散热片的尺寸要求要足够大，否则会导致高温保护或热击穿。<br><img src="/postImg/14-5-a.jpg"></p>
+<h5 id="HT7550"><a href="#HT7550" class="headerlink" title="HT7550"></a>HT7550</h5><p>HT7550是一组CMOS技术实现的三端低功耗高电压稳压器。输出电流为100mA且允许的输入电压可高达30V。具有几个固定的输出电压，范围从2.1V-12V。CMOS技术确保其具有低压降和低静态电流的特性。具有低功耗、低压降、较低的温度系数、高输入电压、静态电流2.5uA、大电流输出100mA、输出电压精度3%，封装SOT89、SOT23-5、TO92。<br><img src="/postImg/14-5-b.jpg"></p>
+<h5 id="MIC29302"><a href="#MIC29302" class="headerlink" title="MIC29302"></a>MIC29302</h5><p>MIC29302是一个大电流，低成本，低压差电压调节器，它采用麦瑞半导体专有的超级βetaPNP进程与PNP旁路元件。在3ALDO稳压器具有450mV电压差和极低的接地电流。稳压器具有非常快从输入电压浪涌和输出瞬态恢复负载电流的变化。MIC29302还具有可调节的输出可以是通过两个外部电阻设置为1.24-15V之间。此外，该装置被充分保护，以防止过度当前故障，输入反想极性，相反的铅插入和过热运行。TTL逻辑使能EN引脚MIC29302可用关闭调节器。当不使用时，该设备可以通过连接EN的输入设定为连续运转（IN）。<br><strong>特点：</strong></p>
+<blockquote>
+<p>高电流能力，3A在整个温度范围内。<br>450mV的满负载低压差电压。<br>低接地电流。<br>精确的1%容差保证。<br>非常快速的瞬态响应。<br>零电流关断模式。<br>调控出错标志信号输出。<br>可调输出电压。<br>封装为TO-263-5L、TO-252-5L。</p>
+</blockquote>
+<p><img src="/postImg/14-5-c.jpg"></p>
+<h5 id="AMS1117-3-3"><a href="#AMS1117-3-3" class="headerlink" title="AMS1117-3.3"></a>AMS1117-3.3</h5><p>AMS1117-3.3是一种输出电压为3.3V的正向低压降稳压器，在1A电流下压降为1.2V。<br>AMS1117有两个版本：固定输出版本和可调版本，固定输出版本输出电压为1.2V、1.5V、1.8V、2.5V、2.85V、3.0V、3.3V、5.0V。1.2V精度2%，其它1%。其内部集成过热保护和限流电路，具有低漏失电压：1A输出电流时仅为1.2V。<br><img src="/postImg/14-5-d.jpg"></p>
+<h3 id="模数部分"><a href="#模数部分" class="headerlink" title="模数部分"></a>模数部分</h3><h4 id="红外热释电路"><a href="#红外热释电路" class="headerlink" title="红外热释电路"></a>红外热释电路</h4><p><strong>（红外传感器）：</strong><br><img src="/postImg/14-6.jpg"><br>热释电红外传感器是利用温度变化的特征来探测红外线的辐射，采用双灵敏元互补的方法抑制温度变化产生的干扰，提高了传感器的工作稳定性。<br>高灵敏度和优越的信噪比、对温度变化的高稳定性、对震动或射频干扰等抗干扰能力强、抗白光能力强。<br>热释电红外传感器输出电信号的幅度和频率主要取决于目标人体的温度、探测区域背景、人体与传感器的距离、人体移动的速度、光学透镜系统的聚焦和设计方式。</p>
+<blockquote>
+<p><strong>型号    RD-624</strong><br>封装    TO-5<br>红外接收电极    2×1mm, 2个灵敏元<br>窗口尺寸    3×4mm<br><strong><code>接收波长    5～14µm</code></strong><br>透过率    ＞75%<br><strong><code>输出信号峰值[Vp-p]    ≥3500mV</code></strong><br>灵敏度    ≥3200V/W<br>探测率 (D*)    1.4 ×108 cmHz1/2/W<br>噪声峰值[Vp-p]    ＜70mV<br>输出平衡度    ＜10%<br>源极电压    0.3～1.1V<br><strong><code>电源电压    3～15V</code></strong><br>工作温度范围    -30～70ºC<br>保存温度范围    -40～80ºC</p>
+</blockquote>
+<p>常配合菲涅尔透镜使用。<br><strong>菲涅尔透镜：</strong>菲涅尔透镜是平面化的聚光镜，菲涅尔透镜利用透镜的特殊光学原理，在探测器前方产生一个交替变化的“盲区”和“高灵敏区“。当有人从透镜前走过时，人体发出的红外线就会不断的交替从”盲区“进入”高灵敏区“，这样就使接收到的红外信号以忽强忽弱的脉冲形式输入。<br>菲涅尔透镜作用有两个：一是聚焦作用，即将热释红外信号折射在一点，第二作用是将探测区域内分为若干个明区和暗区，使进入探测区域的移动物体能以温度变化的形式在传感器上产生热释电信号。</p>
+<p><strong>（多功能信号放大器BISS0001）：</strong><br><img src="/postImg/14-6-a.jpg"><br>BISS0001是一款具有较高性能的传感器信号处理集成电路，它配以热释电红外传感器和少量外接元器件构成被动式的热释红外开关，可以自动快速开启灯、蜂鸣器、白炽灯、自动门、电风扇、烘干器等装置，工作电压3~5V。<br><img src="/postImg/14-6-b.jpg"><br>内置三路比较放大器，两个将输入信号进行放大，放大倍数由设计者自定电路决定，一路对特定VR值进行比较，可以拓展光敏器件。输出延时可调Tx≈49152R1C1，触发封锁时间T1≈24R2C2。<br>再进一步简化电路你会发现它其实就是一个自带驱动能力的放大器IC<br><img src="/postImg/14-6-c.jpg"></p>
+<p>需要具体的BISS0001资料的可以点击下载链接：<a href="https://pan.baidu.com/s/1ZpbI2_D2l1HAvYf-pCkLUg" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZpbI2_D2l1HAvYf-pCkLUg</a><br>提取码：dcfg </p>
+<h3 id="串并行部分"><a href="#串并行部分" class="headerlink" title="串并行部分"></a>串并行部分</h3><h4 id="74HC595"><a href="#74HC595" class="headerlink" title="74HC595"></a>74HC595</h4><p>74HC595是一个8位串行输入，可串行或并行输出的移位寄存器存储寄存器和三态输出。<br>该设备具有串行输入（DS）和串行输出（Q7S）来级联和异步复位输入MR的功能。</p>
+<p>当MR为低电平时复位移位寄存器，即将移位寄存器数据清零。</p>
+<p>在移位寄存器时钟（SHCP）的上升沿时，DS上的数据会被移入移位寄存器，在存储寄存器时钟（STCP）上升沿时，移位寄存器里的数据传输到存储寄存器，当输出使能OE为低时，存储寄存器里的数据就会并行输出。</p>
+<p>当OE为高电平时输出为高阻态。<br><img src="/postImg/14-7.jpg"></p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">Sent_Data_To_hc595</span><span class="token punctuation">(</span>uint8_t Outdata<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span> i <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">8</span> <span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>Outdata <span class="token operator">&amp;</span> <span class="token number">0x80</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0x80</span> <span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">//判断数据高低位</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">HC595_DAT_State</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//拉高595数据线DATA ↑</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">HC595_DAT_State</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//拉低595数据线DATA ↓</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">HC595_SCK_State</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//拉低595 LCK时钟线 ↓</span>
+    <span class="token function">delay_ms</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">HC595_SCK_State</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//拉高595 LCK时钟线 ↑</span>
+        <span class="token function">delay_ms</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Outdata <span class="token operator">=</span> Outdata <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//数据左移</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">HC595_RCK_State</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">delay_ms</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">HC595_RCK_State</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//上升沿LATCH输出数据 →</span>
+    <span class="token function">delay_ms</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="功率计算"><a href="#功率计算" class="headerlink" title="功率计算"></a>功率计算</h2><p><img src="/postImg/14-8.jpg"></p>
+<blockquote>
+<p>0402型号电阻默认功率为1/16W。<br>0603型号电阻默认功率为1/10W。<br>0805型号电阻默认功率为1/8W。<br>1206型号电阻默认功率为1/4W。<br>1812型号电阻默认功率为1/2W。<br>2010型号电阻默认功率为3/4W。<br>2512型号电阻默认功率为1W。</p>
+</blockquote>
+<h2 id="天线计算"><a href="#天线计算" class="headerlink" title="天线计算"></a>天线计算</h2><p><img src="/postImg/14-9.jpg"></p>
+
             </div>
             <hr>
 
@@ -595,7 +662,7 @@ PCB常用">
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">Tropical Cat</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/05/06/电路设计/" class="b-link-green">电路设计</a>
+                    <a href="/2020/05/06/电路设计/" class="b-link-green">快速入门电路设计</a>
                 </p>
             </div>
         </div>
@@ -642,24 +709,22 @@ PCB常用">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/06/电路设计/">
+                <a href="/2020/05/24/数电/">
                     <div class="card-image">
                         
-                        <img src="/postImg/14-1.jpg" class="responsive-img" alt="电路设计">
+                        <img src="/postImg/14-1.jpg" class="responsive-img" alt="数电">
                         
-                        <span class="card-title">电路设计</span>
+                        <span class="card-title">数电</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">电路制图软件AD19对于此软件的下载，找一下，在此连接中有介绍：https://www.redaimao.cn/2019/02/02/一些好用的软件推荐/对于怎么用自己可以搜索一些教学视频，Qualify中有很多好用的教学网站。
-PCB常用</div>
+                    <div class="summary"></div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-06
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -672,7 +737,6 @@ PCB常用</div>
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -794,7 +858,7 @@ PCB常用</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">46.8k</span>
+                <span class="white-color">49.7k</span>
             
 
             
