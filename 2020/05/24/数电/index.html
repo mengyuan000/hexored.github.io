@@ -270,6 +270,19 @@
 </header>
 
 
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -635,7 +648,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/24/Python语言/">
+                <a href="/2021/01/22/Python语言基础/">
                     <div class="card-image">
                         
                         <img src="/postImg/16-1.jpg" class="responsive-img" alt="Python语言">
@@ -644,10 +657,11 @@
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary"></div>
+                    <div class="summary">——取自崇天老师的视频(中国大学MOOC)，文章不适合新手，此文章只作为记忆记录方便查阅，记录的标准为方便自己再次学习和直接利用资源——
+官方文档：http://docs.python.org/zh-cn/3/建议作为某些疑惑内容深入理解和</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-24
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-01-22
                         </span>
                         <span class="publish-author">
                             
@@ -682,9 +696,9 @@
                 <a href="/2020/05/06/电路设计/">
                     <div class="card-image">
                         
-                        <img src="/postImg/14-1.jpg" class="responsive-img" alt="快速入门电路设计">
+                        <img src="/postImg/14-1.jpg" class="responsive-img" alt="电路设计">
                         
-                        <span class="card-title">快速入门电路设计</span>
+                        <span class="card-title">电路设计</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -782,7 +796,7 @@ PCB常用</div>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">49.7k</span>
+                <span class="white-color">74.6k</span>
             
 
             
