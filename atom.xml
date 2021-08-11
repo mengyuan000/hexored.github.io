@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-01-21T16:03:19.089Z</updated>
+  <updated>2021-08-11T01:35:35.261Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,146 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>项目四：简易仓管</title>
+    <link href="http://yoursite.com/2021/08/11/%E9%A1%B9%E7%9B%AE%E5%9B%9B%EF%BC%9A%E7%AE%80%E6%98%93%E4%BB%93%E7%AE%A1/"/>
+    <id>http://yoursite.com/2021/08/11/项目四：简易仓管/</id>
+    <published>2021-08-11T01:15:07.129Z</published>
+    <updated>2021-08-11T01:35:35.261Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;项目目标&quot;&gt;&lt;a href=&quot;#项目目标&quot; class=&quot;headerlink&quot; title=&quot;项目目标&quot;&gt;&lt;/a&gt;项目目标&lt;/h2&gt;&lt;p&gt;完成一个txt文件上传，取出其中有用的数据，存入数据库，并且记录带有excel下载功能。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="项目" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="mongodb" scheme="http://yoursite.com/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB.</title>
+    <link href="http://yoursite.com/2021/06/05/ModngoDB%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2021/06/05/ModngoDB基础/</id>
+    <published>2021-06-05T10:11:34.943Z</published>
+    <updated>2021-08-06T05:21:56.971Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;mongoDB是什么&quot;&gt;&lt;a href=&quot;#mongoDB是什么&quot; class=&quot;headerlink&quot; title=&quot;mongoDB是什么&quot;&gt;&lt;/a&gt;mongoDB是什么&lt;/h2&gt;&lt;p&gt;MongoDB
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node.js</title>
+    <link href="http://yoursite.com/2021/05/30/nodejs/"/>
+    <id>http://yoursite.com/2021/05/30/nodejs/</id>
+    <published>2021-05-29T17:31:20.567Z</published>
+    <updated>2021-08-11T06:43:05.812Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Node-js概述&quot;&gt;&lt;a href=&quot;#Node-js概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STM32</title>
+    <link href="http://yoursite.com/2021/02/15/STM32/"/>
+    <id>http://yoursite.com/2021/02/15/STM32/</id>
+    <published>2021-02-15T11:32:17.070Z</published>
+    <updated>2021-08-11T01:28:53.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;STM32&quot;&gt;&lt;a href=&quot;#STM32&quot; class=&quot;headerlink&quot; title=&quot;STM32&quot;&gt;&lt;/a&gt;STM32&lt;/h2&gt;&lt;h3 id=&quot;安装下载调试&quot;&gt;&lt;a href=&quot;#安装下载调试&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="硬件" scheme="http://yoursite.com/categories/%E7%A1%AC%E4%BB%B6/"/>
+    
+    
+      <category term="STM32" scheme="http://yoursite.com/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python进阶之资源调用</title>
+    <link href="http://yoursite.com/2021/02/10/Python%E8%BF%9B%E9%98%B6%E4%B9%8B%E8%B5%84%E6%BA%90%E8%B0%83%E7%94%A8/"/>
+    <id>http://yoursite.com/2021/02/10/Python进阶之资源调用/</id>
+    <published>2021-02-10T04:42:51.979Z</published>
+    <updated>2021-08-11T01:29:28.292Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第三方库应用&quot;&gt;&lt;a href=&quot;#第三方库应用&quot; class=&quot;headerlink&quot; title=&quot;第三方库应用&quot;&gt;&lt;/a&gt;第三方库应用&lt;/h2&gt;&lt;h3 id=&quot;openpyxl（excel操作应用）&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python语言</title>
     <link href="http://yoursite.com/2021/01/22/Python%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
     <id>http://yoursite.com/2021/01/22/Python语言基础/</id>
     <published>2021-01-21T16:02:06.511Z</published>
-    <updated>2021-01-21T16:03:19.089Z</updated>
+    <updated>2021-02-18T07:56:58.300Z</updated>
     
     <summary type="html">
     
@@ -92,7 +227,7 @@
     <link href="http://yoursite.com/2020/01/25/%E9%A1%B9%E7%9B%AE%E4%B8%89%EF%BC%9A%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AE%9E%E7%8E%B0%E8%AF%AD%E9%9F%B3%E5%AF%B9%E8%AF%9D/"/>
     <id>http://yoursite.com/2020/01/25/项目三：树莓派开发板实现语音对话/</id>
     <published>2020-01-25T03:56:23.004Z</published>
-    <updated>2020-02-08T07:26:02.458Z</updated>
+    <updated>2021-06-05T10:23:08.979Z</updated>
     
     <summary type="html">
     
@@ -107,10 +242,10 @@
     
     </summary>
     
-      <category term="人工智能" scheme="http://yoursite.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+      <category term="项目" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-      <category term="项目" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="语音识别" scheme="http://yoursite.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
     
   </entry>
   
@@ -119,7 +254,7 @@
     <link href="http://yoursite.com/2020/01/13/%E9%A1%B9%E7%9B%AE%E4%BA%8C%EF%BC%9A%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2020/01/13/项目二：微信小程序开发/</id>
     <published>2020-01-13T06:57:26.046Z</published>
-    <updated>2020-02-08T07:30:58.870Z</updated>
+    <updated>2021-06-05T10:23:40.445Z</updated>
     
     <summary type="html">
     
@@ -134,10 +269,10 @@
     
     </summary>
     
-      <category term="Javascript" scheme="http://yoursite.com/categories/Javascript/"/>
+      <category term="项目" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-      <category term="项目" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
     
   </entry>
   
@@ -146,7 +281,7 @@
     <link href="http://yoursite.com/2020/01/12/%E9%A1%B9%E7%9B%AE%E4%B8%80%EF%BC%9A%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2020/01/12/项目一：个人网站的搭建/</id>
     <published>2020-01-12T06:59:15.879Z</published>
-    <updated>2020-02-08T07:32:00.709Z</updated>
+    <updated>2021-06-05T10:26:33.575Z</updated>
     
     <summary type="html">
     
@@ -161,10 +296,10 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="项目" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-      <category term="项目" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
@@ -380,11 +515,11 @@
   </entry>
   
   <entry>
-    <title>ES6的常用语法</title>
+    <title>Javascript基础语法</title>
     <link href="http://yoursite.com/2019/01/25/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/01/25/ES6的常用语法/</id>
     <published>2019-01-25T09:09:36.311Z</published>
-    <updated>2020-05-24T14:38:12.240Z</updated>
+    <updated>2021-05-29T17:33:29.544Z</updated>
     
     <summary type="html">
     
@@ -392,8 +527,8 @@
       
         
         
-          &lt;p&gt;刚开始用vue或者react，很多时候我们都会把ES6这个大兄弟加入我们的技术栈中。但是ES6那么多那么多特性，我们需要全部都掌握吗？秉着八原则，掌握好常有用的这个可以让我们快速起飞&lt;/p&gt;
-&lt;h3 id=&quot;变量声明const和let&quot;&gt;&lt;a
+          &lt;h1 id=&quot;以下更新于2021年&quot;&gt;&lt;a href=&quot;#以下更新于2021年&quot; class=&quot;headerlink&quot; title=&quot;以下更新于2021年&quot;&gt;&lt;/a&gt;以下更新于2021年&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;JavaScript的概述&quot;&gt;&lt;a
         
       
     
@@ -404,119 +539,7 @@
     
       <category term="Html" scheme="http://yoursite.com/tags/Html/"/>
     
-      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/24/hello-world/"/>
-    <id>http://yoursite.com/2019/01/24/hello-world/</id>
-    <published>2019-01-24T11:40:29.623Z</published>
-    <updated>2019-06-25T14:13:13.967Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Welcome-to-here&quot;&gt;&lt;a href=&quot;#Welcome-to-here&quot; class=&quot;headerlink&quot; title=&quot;Welcome to here!&quot;&gt;&lt;/a&gt;Welcome to here!&lt;/h2&gt;&lt;h4
-        
-      
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gitalk评论配置</title>
-    <link href="http://yoursite.com/2019/01/23/Gitalk%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2019/01/23/Gitalk评论配置/</id>
-    <published>2019-01-23T10:49:40.076Z</published>
-    <updated>2019-06-25T14:05:37.535Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;对于新建的网站没有一个好的评论系统，会对体验度打大大的折扣，虽然之前出现过许多好用的评论插件，但是都因为一些问题不是关闭就是需要翻墙，今天我给大家推荐Gitalk，基于Github原生态的项目。&lt;/p&gt;
-&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Github" scheme="http://yoursite.com/categories/Github/"/>
-    
-    
-      <category term="Gitalk" scheme="http://yoursite.com/tags/Gitalk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo+Github搭建网站</title>
-    <link href="http://yoursite.com/2019/01/21/hexo_github%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"/>
-    <id>http://yoursite.com/2019/01/21/hexo_github搭建网站/</id>
-    <published>2019-01-21T07:00:20.836Z</published>
-    <updated>2020-05-24T14:36:54.022Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;什么是Hexo&quot;&gt;&lt;a href=&quot;#什么是Hexo&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件框架" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
-    
-      <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Html基础语法</title>
-    <link href="http://yoursite.com/2019/01/08/Html%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2019/01/08/Html基础语法/</id>
-    <published>2019-01-08T10:58:46.660Z</published>
-    <updated>2020-05-24T14:36:56.908Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Html是一种超文本标记语言( hypertext markup language )，超链接（&lt;strong&gt;实现页面跳转&lt;/strong&gt;）；&lt;/p&gt;
-&lt;h3 id=&quot;html标准结构：&quot;&gt;&lt;a href=&quot;#html标准结构：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="软件语言" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="Html" scheme="http://yoursite.com/tags/Html/"/>
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
     
   </entry>
   
